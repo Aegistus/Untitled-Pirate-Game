@@ -4,37 +4,76 @@ using UnityEngine;
 
 public class ShipMovement : MonoBehaviour
 {
-    public float turnSpeed = 1000f;
-    public float accelerateSpeed = 1000f;
+    public float turnSpeed = 40;
+    public float moveSpeed = 1.0f;
+    public float rotate;
+    public float move;
 
-    private Rigidbody rbody;
+    enum SailState {ANCHORED, HALF_SAIL, FULL_SAIL}
+    SailState state;
     void Start()
     {
-        rbody = GetComponent<Rigidbody>();
+        state = SailState.ANCHORED;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        if(Input.GetKey(KeyCode.W))
+        {
+            state = SailState.FULL_SAIL;
+        }
+        else if(Input.GetKeyUp(KeyCode.S))
+        {
+            if (state == SailState.HALF_SAIL)
+            {
+                state = SailState.ANCHORED;
+            }
+            else if(state == SailState.FULL_SAIL)
+                state = SailState.HALF_SAIL;
+           
+        }
 
-        rbody.AddTorque(0f, h * turnSpeed * Time.deltaTime, 0f);
-        rbody.AddForce(transform.forward * v * accelerateSpeed * Time.deltaTime);
+        if(state == SailState.FULL_SAIL)
+        {
+            IncreaseSpeed();
+            Turn();
+        }
+        else if(state == SailState.HALF_SAIL)
+        {
+            DecreaseSpeed();
+            Turn();
+        }
+        else if(state == SailState.ANCHORED)
+        {
+            DecreaseSpeed();
+        }
+        
     }
 
     void IncreaseSpeed()
     {
-
+        move = moveSpeed * Time.deltaTime;
+        transform.Translate(0f,0f,move);
     }
 
     void DecreaseSpeed()
     {
-
+        
+        if(state == SailState.ANCHORED)
+        {
+            transform.Translate(transform.forward * 0 * Time.deltaTime);
+        }
+        else
+        {
+            move = moveSpeed/2 * Time.deltaTime;
+            transform.Translate(0f, 0f, move);
+        }
+            
     }
 
     void Turn()
     {
-       
+        rotate = Input.GetAxis("Horizontal") * turnSpeed * Time.deltaTime;
+        transform.Rotate(0f, rotate, 0f);
     }
 }
