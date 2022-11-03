@@ -6,8 +6,9 @@ public class ShipMovement : MonoBehaviour
 {
     public float turnSpeed = 40;
     public float moveSpeed = 1.0f;
-    public float rotate;
-    public float move;
+    float rotate;
+    float move;
+    float currentSpeed = 0f;
 
     enum SailState {ANCHORED, HALF_SAIL, FULL_SAIL}
     SailState state;
@@ -18,57 +19,29 @@ public class ShipMovement : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            state = SailState.FULL_SAIL;
-        }
-        else if(Input.GetKeyUp(KeyCode.S))
-        {
-            if (state == SailState.HALF_SAIL)
+            if (state != SailState.FULL_SAIL)
             {
-                state = SailState.ANCHORED;
+                state++;
+                currentSpeed += moveSpeed;
             }
-            else if(state == SailState.FULL_SAIL)
-                state = SailState.HALF_SAIL;
-           
         }
-
-        if(state == SailState.FULL_SAIL)
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            IncreaseSpeed();
-            Turn();
+            if (state != SailState.ANCHORED)
+            {
+                state--;
+                currentSpeed -= moveSpeed;
+            }
         }
-        else if(state == SailState.HALF_SAIL)
-        {
-            DecreaseSpeed();
-            Turn();
-        }
-        else if(state == SailState.ANCHORED)
-        {
-            DecreaseSpeed();
-        }
-        
+        Move();
+        Turn();
     }
 
-    void IncreaseSpeed()
+    void Move()
     {
-        move = moveSpeed * Time.deltaTime;
-        transform.Translate(0f,0f,move);
-    }
-
-    void DecreaseSpeed()
-    {
-        
-        if(state == SailState.ANCHORED)
-        {
-            transform.Translate(transform.forward * 0 * Time.deltaTime);
-        }
-        else
-        {
-            move = moveSpeed/2 * Time.deltaTime;
-            transform.Translate(0f, 0f, move);
-        }
-            
+        transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime, Space.Self);
     }
 
     void Turn()
