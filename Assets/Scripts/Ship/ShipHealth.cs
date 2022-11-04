@@ -25,7 +25,7 @@ public class ShipHealth : MonoBehaviour
         StartCoroutine(UpdateWaterLevel());
     }
 
-    public void Damage(Damage damage)
+    public void Damage(DamageValue damage)
     {
         BottomHealth -= damage.bottom;
         DeckHealth -= damage.deck;
@@ -33,7 +33,7 @@ public class ShipHealth : MonoBehaviour
         ClampHealth();
     }
 
-    public void Repair(Repair repair)
+    public void Repair(RepairValue repair)
     {
         BottomHealth += repair.bottom;
         DeckHealth += repair.deck;
