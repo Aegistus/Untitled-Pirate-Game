@@ -350,6 +350,8 @@ MonoBehaviour:
   target: {fileID: 1189721550}
   translationSmoothSpeed: 1
   rotationSmoothSpeed: 2
+  cursorFollowSpeed: 2
+  maxCursorFollowDistance: 30
 --- !u!4 &304094488
 Transform:
   m_ObjectHideFlags: 0
@@ -605,6 +607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 20
   moveSpeed: 5
+  acceleration: 1
 --- !u!114 &1189721552
 MonoBehaviour:
   m_ObjectHideFlags: 0

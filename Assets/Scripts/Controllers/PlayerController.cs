@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     ShipMovement movement;
+    CameraController cameraController;
 
     void Awake()
     {
         movement = GetComponent<ShipMovement>();
+        cameraController = FindObjectOfType<CameraController>();
     }
 
     void Update()
@@ -20,6 +22,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             movement.DecreaseSpeed();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            cameraController.FollowCursor(true);
+        }
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            cameraController.FollowCursor(false);
         }
     }
 }
