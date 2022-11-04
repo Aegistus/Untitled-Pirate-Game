@@ -566,6 +566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1189721550}
+  - component: {fileID: 1189721552}
   - component: {fileID: 1189721551}
   m_Layer: 0
   m_Name: Ship
@@ -604,6 +605,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: 20
   moveSpeed: 5
+--- !u!114 &1189721552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189721549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8282c2fbe544a4cb5f04d4e72e3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1251884270
 GameObject:
   m_ObjectHideFlags: 0
