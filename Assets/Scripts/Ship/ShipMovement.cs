@@ -19,24 +19,26 @@ public class ShipMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            if (state != SailState.FULL_SAIL)
-            {
-                state++;
-                currentSpeed += moveSpeed;
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            if (state != SailState.ANCHORED)
-            {
-                state--;
-                currentSpeed -= moveSpeed;
-            }
-        }
         Move();
         Turn();
+    }
+
+    public void IncreaseSpeed()
+    {
+        if (state != SailState.FULL_SAIL)
+        {
+            state++;
+            currentSpeed += moveSpeed;
+        }
+    }
+
+    public void DecreaseSpeed()
+    {
+        if (state != SailState.ANCHORED)
+        {
+            state--;
+            currentSpeed -= moveSpeed;
+        }
     }
 
     void Move()
