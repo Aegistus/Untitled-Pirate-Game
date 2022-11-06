@@ -31,5 +31,7 @@ public class PlayerController : MonoBehaviour
         {
             cameraController.FollowCursor(false);
         }
+        float rotation = Input.GetAxis("Horizontal");
+        movement.Turn(rotation);
     }
 }

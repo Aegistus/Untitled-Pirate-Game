@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class ShipMovement : MonoBehaviour
 {
+    public enum SailState {ANCHORED, HALF_SAIL, FULL_SAIL}
+
     public float turnSpeed = 40;
     public float moveSpeed = 1.0f;
     public float acceleration = 1f;
-    float rotate;
-    float move;
+
+    public SailState CurrentSailState => state;
+
     float currentSpeed = 0f;
     float targetSpeed = 0f;
 
-    enum SailState {ANCHORED, HALF_SAIL, FULL_SAIL}
     SailState state;
     void Start()
     {
@@ -22,7 +24,6 @@ public class ShipMovement : MonoBehaviour
     void Update()
     {
         Move();
-        Turn();
     }
 
     public void IncreaseSpeed()
@@ -49,9 +50,9 @@ public class ShipMovement : MonoBehaviour
         transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime, Space.Self);
     }
 
-    void Turn()
+    public void Turn(float rotation)
     {
-        rotate = Input.GetAxis("Horizontal") * turnSpeed * Time.deltaTime;
-        transform.Rotate(0f, rotate, 0f);
+        rotation = Mathf.Clamp(rotation, -1, 1);
+        transform.Rotate(0f, rotation * turnSpeed * Time.deltaTime, 0f);
     }
 }
