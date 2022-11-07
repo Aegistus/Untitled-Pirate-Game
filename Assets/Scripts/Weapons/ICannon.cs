@@ -6,5 +6,5 @@ public interface ICannon
 {
     void Shoot();
 
-    void Reload(float time);
+    void Reload();
 }
