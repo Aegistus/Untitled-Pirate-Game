@@ -5,11 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     ShipMovement movement;
+    ShipWeapons weapons;
     CameraController cameraController;
 
     void Awake()
     {
         movement = GetComponent<ShipMovement>();
+        weapons = GetComponent<ShipWeapons>();
         cameraController = FindObjectOfType<CameraController>();
     }
 
@@ -32,6 +34,11 @@ public class PlayerController : MonoBehaviour
             cameraController.FollowCursor(false);
         }
         float rotation = Input.GetAxis("Horizontal");
+        if (Input.GetButtonDown("Fire1"))
+        {
+            weapons.FireWeaponsOnSide(ShipDirection.Starboard);
+            weapons.FireWeaponsOnSide(ShipDirection.Port);
+        }
         movement.Turn(rotation);
     }
 }

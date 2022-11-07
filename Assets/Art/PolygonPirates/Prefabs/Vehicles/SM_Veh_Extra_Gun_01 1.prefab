@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2390986}
   - component: {fileID: 64502878353582204}
   m_Layer: 0
-  m_Name: SM_Veh_Extra_Gun_01
+  m_Name: SM_Veh_Extra_Gun_01 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
