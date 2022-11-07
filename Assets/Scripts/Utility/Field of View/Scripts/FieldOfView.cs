@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class FieldOfView : MonoBehaviour
 {
+	public event Action OnTargetFound;
 	public float minDetectionRadius = 1f;
 	public float viewRadius;
 	[Range(0,360)]
@@ -50,6 +52,7 @@ public class FieldOfView : MonoBehaviour
 				if (!Physics.Raycast (transform.position, dirToTarget, dstToTarget, obstacleMask))
 				{
 					visibleTargets.Add (target);
+					OnTargetFound?.Invoke();
 				}
 			}
 		}

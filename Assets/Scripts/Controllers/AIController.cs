@@ -19,6 +19,7 @@ public class AIController : MonoBehaviour
         Dictionary<Type, State> states = new Dictionary<Type, State>()
         {
             { typeof(WanderState), new WanderState(gameObject, this) },
+            { typeof(ChaseState), new ChaseState(gameObject, this) },
         };
         stateMachine.SetStates(states, typeof(WanderState));
     }
