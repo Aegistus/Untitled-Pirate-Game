@@ -53,7 +53,7 @@ public class ShipHealth : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(1f);
-            WaterLevel += MaxBottomHealth - BottomHealth * waterIncreaseRate;
+            WaterLevel += (MaxBottomHealth - BottomHealth) * waterIncreaseRate;
             if (WaterLevel >= MaxWaterLevel)
             {
                 Sink();

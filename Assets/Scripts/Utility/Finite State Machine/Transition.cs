@@ -14,6 +14,13 @@ public class Transition
 
     bool manuallyTriggered = false;
 
+    // only use this for event-based transitions. Be sure to manually trigger!
+    public Transition(Type toState)
+    {
+        ToState = toState;
+        condition = () => false;
+    }
+
     public Transition(Type toState, Func<bool> condition)
     {
         ToState = toState;

@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 using UnityEngine.AI;
+using System;
 
 public class WanderState : AIState
 {
@@ -10,6 +12,9 @@ public class WanderState : AIState
 
     public WanderState(GameObject gameObject, AIController controller) : base(gameObject, controller)
     {
+        Transition playerSpotted = new Transition(typeof(ChaseState));
+        fov.OnTargetFound += playerSpotted.ManuallyTrigger;
+        transitionsTo.Add(playerSpotted);
 
     }
 
