@@ -4,43 +4,37 @@ using UnityEngine;
 
 public class CannonController : MonoBehaviour, ICannon
 {
+    [SerializeField] string projectileName = "Cannonball";
+    [SerializeField] Transform muzzleTransform;
+    [SerializeField] float reloadTime = 3f;
 
-    public GameObject projectile;
-    public Transform muzzleTransform;
-    public float maxReloadTime = 3f;//set tempRT to same value
-    float currentReloadTime = 0f;
-    public float bulletSpeed = 50f;
-    public float amountOfCannonBalls = 1f;
+    int projectileID;
+    bool isLoaded = true;
+    PoolManager pool;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        if(amountOfCannonBalls <= 0)
-        {
-            Reload();
-        }
+        pool = PoolManager.Instance;
+        projectileID = pool.GetPoolObjectID(projectileName);
     }
+
     public void Reload()
     {
-        currentReloadTime -= Time.deltaTime;
-        if(currentReloadTime <= 0)
-        {
-            //play reload sound
-            amountOfCannonBalls = 1f;
-        }
+        StartCoroutine(ReloadCoroutine());
+    }
+
+    public IEnumerator ReloadCoroutine()
+    {
+        yield return new WaitForSeconds(reloadTime);
+        isLoaded = true;
     }
 
     public void Shoot()
     {
-        if (amountOfCannonBalls <= 0)
+        if (!isLoaded)
         {
             return;
         }
-        amountOfCannonBalls--;
-        currentReloadTime = maxReloadTime;
-        GameObject currentBullet = Instantiate(projectile, muzzleTransform.position, muzzleTransform.rotation);
-        Rigidbody rig = currentBullet.GetComponent<Rigidbody>();
-
-        rig.AddForce(transform.forward * bulletSpeed, ForceMode.VelocityChange);
+        pool.SpawnObjectWithLifetime(projectileID, muzzleTransform.position, muzzleTransform.rotation, 10f);
     }
 }
