@@ -15,11 +15,11 @@ public class WanderState : AIState
         Transition playerSpotted = new Transition(typeof(ChaseState));
         fov.OnTargetFound += playerSpotted.ManuallyTrigger;
         transitionsTo.Add(playerSpotted);
-
     }
 
     public override void BeforeExecution()
     {
+        Debug.Log("Wandering");
         SetRandomDestination();
     }
 
