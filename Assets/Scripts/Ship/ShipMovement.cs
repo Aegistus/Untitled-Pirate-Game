@@ -14,11 +14,19 @@ public class ShipMovement : MonoBehaviour
 
     float currentSpeed = 0f;
     float targetSpeed = 0f;
+    SoundManager sound;
+    string furlSound = "Sails_Furl";
+    string unfurlSound = "Sails_Unfurl";
+    int furlSoundID;
+    int unfurlSoundID;
 
     SailState state;
     void Start()
     {
         state = SailState.ANCHORED;
+        sound = SoundManager.Instance;
+        furlSoundID = sound.GetSoundID(furlSound);
+        unfurlSoundID = sound.GetSoundID(unfurlSound);
     }
 
     void Update()
@@ -32,6 +40,7 @@ public class ShipMovement : MonoBehaviour
         {
             state++;
             targetSpeed += moveSpeed;
+            sound.PlaySoundAtPosition(unfurlSoundID, transform.position);
         }
     }
 
@@ -41,6 +50,7 @@ public class ShipMovement : MonoBehaviour
         {
             state--;
             targetSpeed -= moveSpeed;
+            sound.PlaySoundAtPosition(furlSoundID, transform.position);
         }
     }
 

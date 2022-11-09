@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8af0e3fab035dc419adb6218dd391f1, type: 3}
+  m_Name: Cannon_Shot
+  m_EditorClassIdentifier: 
+  soundName: Cannon_Shot
+  audioVariants:
+  - {fileID: 8300000, guid: f425f8c235a7ca942ab65190c5aa6d0c, type: 3}
+  - {fileID: 8300000, guid: c9296495c828e364cb3362e8efe90990, type: 3}
+  - {fileID: 8300000, guid: 4618e48f0d5c5ba439751407ef50ccb7, type: 3}
+  - {fileID: 8300000, guid: bb91eae5672f8b247a15ddd0310c63af, type: 3}
+  - {fileID: 8300000, guid: 8c33653c74dd25a40ae6118d30026da4, type: 3}
+  - {fileID: 8300000, guid: 017a7eed18cf1ea439a6999a52859704, type: 3}
+  - {fileID: 8300000, guid: 8aab4bae1d4b0a945aad690242cc878c, type: 3}
+  - {fileID: 8300000, guid: 8cd9eccaf48ee6f41b2d26b58824afb9, type: 3}
+  - {fileID: 8300000, guid: a91c74cd10e59d84a8552c30693f8f06, type: 3}
+  - {fileID: 8300000, guid: a80125ff46987bf4bbf4f732118929ed, type: 3}
+  volume: 20
+  volumeVariance: 0.1
+  pitch: 1
+  pitchVariance: 0.1
+  minimunDistance: 1
+  loop: 0
+  mixerGroup: {fileID: 0}
+  source: {fileID: 0}

@@ -11,11 +11,19 @@ public class CannonController : MonoBehaviour, ICannon
     int projectileID;
     bool isLoaded = true;
     PoolManager pool;
+    SoundManager sound;
+    string fireSoundString = "Cannon_Shot";
+    string reloadSoundString = "Cannon_Reload";
+    int fireSoundID;
+    int reloadSoundID;
 
     void Start()
     {
         pool = PoolManager.Instance;
         projectileID = pool.GetPoolObjectID(projectileName);
+        sound = SoundManager.Instance;
+        fireSoundID = sound.GetSoundID(fireSoundString);
+        reloadSoundID = sound.GetSoundID(reloadSoundString);
     }
 
     public void Reload()
@@ -26,6 +34,7 @@ public class CannonController : MonoBehaviour, ICannon
     public IEnumerator ReloadCoroutine()
     {
         yield return new WaitForSeconds(reloadTime);
+        sound.PlaySoundAtPosition(reloadSoundID, transform.position);
         isLoaded = true;
     }
 
@@ -36,6 +45,7 @@ public class CannonController : MonoBehaviour, ICannon
             return;
         }
         pool.SpawnObjectWithLifetime(projectileID, muzzleTransform.position, muzzleTransform.rotation, 10f);
+        sound.PlaySoundAtPosition(fireSoundID, transform.position);
         isLoaded = false;
         Reload();
     }

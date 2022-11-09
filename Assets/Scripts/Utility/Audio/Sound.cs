@@ -13,7 +13,7 @@ public class Sound : ScriptableObject
 
     public AudioClip[] audioVariants;
 
-	[Range(0f, 1f)]
+	[Range(0f, 100f)]
 	public float volume = 1f;
 	[Range(0f, 1f)]
 	public float volumeVariance = .1f;
