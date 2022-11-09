@@ -133,7 +133,7 @@ MonoBehaviour:
   translationSmoothSpeed: 1
   rotationSmoothSpeed: 1.5
   cursorFollowSpeed: 2
-  maxCursorFollowDistance: 30
+  maxCursorFollowDistance: 50
   zoomIncrement: 20
   zoomSpeed: 10
   minZoom: -10
