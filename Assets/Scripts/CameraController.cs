@@ -5,13 +5,25 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] Transform target;
+    [Header("Movement")]
     [SerializeField] float translationSmoothSpeed = 1f;
     [SerializeField] float rotationSmoothSpeed = 1f;
     [SerializeField] float cursorFollowSpeed = 3f;
     [SerializeField] float maxCursorFollowDistance = 10f;
-
+    [Header("Zoom")]
+    [SerializeField] float zoomIncrement = 10f;
+    [SerializeField] float zoomSpeed = 5f;
+    [SerializeField] float minZoom = 20f;
+    [SerializeField] float maxZoom = 200f;
+        
+    float targetZoom;
     bool followCursor = false;
     RaycastHit rayHit;
+
+    void Awake()
+    {
+        targetZoom = transform.position.y;
+    }
 
     void Update()
     {
@@ -35,10 +47,18 @@ public class CameraController : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, target.position, translationSmoothSpeed * Time.deltaTime);
         }
         transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, rotationSmoothSpeed * Time.deltaTime);
+        float y = Mathf.Lerp(transform.position.y, targetZoom, zoomSpeed * Time.deltaTime);
+        transform.position = new Vector3(transform.position.x, y, transform.position.z);
     }
 
     public void FollowCursor(bool follow)
     {
         followCursor = follow;
+    }
+
+    public void Zoom(float amount)
+    {
+        targetZoom += amount * zoomIncrement;
+        targetZoom = Mathf.Clamp(targetZoom, minZoom, maxZoom);
     }
 }

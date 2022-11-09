@@ -45,7 +45,7 @@ public class AIController : MonoBehaviour
     {
         stateMachine.ExecuteState(Time.deltaTime);
         // points ship towards next point on path
-        if (navAgent.hasPath)
+        if (navAgent.hasPath && navAgent.path.corners.Length > 1)
         {
             float angleDirection = AngleDirection(-transform.forward, transform.position - navAgent.path.corners[1], Vector3.up);
             movement.Turn(angleDirection);

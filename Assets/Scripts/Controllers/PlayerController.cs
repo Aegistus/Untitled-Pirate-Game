@@ -40,5 +40,6 @@ public class PlayerController : MonoBehaviour
             weapons.FireWeaponsOnSide(ShipDirection.Port);
         }
         movement.Turn(rotation);
+        cameraController.Zoom(-Input.mouseScrollDelta.y);
     }
 }
