@@ -8,21 +8,18 @@ public class ProjectileController : MonoBehaviour
     public DamageValue damage;
     private void OnEnable()
     {
-        Rigidbody rig = this.GetComponent<Rigidbody>();
+        Rigidbody rig = GetComponent<Rigidbody>();
         rig.AddForce(transform.forward * bulletSpeed, ForceMode.VelocityChange);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         ShipHealth s = collision.gameObject.GetComponent<ShipHealth>();
-        s.Damage(damage);
+        if (s != null)
+        {
+            s.Damage(damage);
+        }
 
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 }

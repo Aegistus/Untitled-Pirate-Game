@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
             cameraController.FollowCursor(false);
         }
         float rotation = Input.GetAxis("Horizontal");
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             weapons.FireWeaponsOnSide(ShipDirection.Starboard);
             weapons.FireWeaponsOnSide(ShipDirection.Port);

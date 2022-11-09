@@ -36,5 +36,7 @@ public class CannonController : MonoBehaviour, ICannon
             return;
         }
         pool.SpawnObjectWithLifetime(projectileID, muzzleTransform.position, muzzleTransform.rotation, 10f);
+        isLoaded = false;
+        Reload();
     }
 }
