@@ -14,6 +14,9 @@ public class ShipMovement : MonoBehaviour
 
     float currentSpeed = 0f;
     float targetSpeed = 0f;
+
+    ShipParts shipParts;
+
     SoundManager sound;
     string furlSound = "Sails_Furl";
     string unfurlSound = "Sails_Unfurl";
@@ -23,10 +26,12 @@ public class ShipMovement : MonoBehaviour
     SailState state;
     void Start()
     {
-        state = SailState.ANCHORED;
+        shipParts = GetComponentInChildren<ShipParts>();
         sound = SoundManager.Instance;
         furlSoundID = sound.GetSoundID(furlSound);
         unfurlSoundID = sound.GetSoundID(unfurlSound);
+        state = SailState.ANCHORED;
+        UpdateSails();
     }
 
     void Update()
@@ -41,6 +46,7 @@ public class ShipMovement : MonoBehaviour
             state++;
             targetSpeed += moveSpeed;
             sound.PlaySoundAtPosition(unfurlSoundID, transform.position);
+            UpdateSails();
         }
     }
 
@@ -51,6 +57,7 @@ public class ShipMovement : MonoBehaviour
             state--;
             targetSpeed -= moveSpeed;
             sound.PlaySoundAtPosition(furlSoundID, transform.position);
+            UpdateSails();
         }
     }
 
@@ -64,5 +71,30 @@ public class ShipMovement : MonoBehaviour
     {
         rotation = Mathf.Clamp(rotation, -1, 1);
         transform.Rotate(0f, rotation * turnSpeed * Time.deltaTime, 0f);
+    }
+
+    void UpdateSails()
+    {
+        if (state == SailState.ANCHORED)
+        {
+            shipParts.MainMast.transform.GetChild(0).gameObject.SetActive(false);
+            shipParts.ForeMast.transform.GetChild(0).gameObject.SetActive(false);
+            shipParts.MizzenMast.transform.GetChild(0).gameObject.SetActive(false);
+            return;
+        }
+        if (state == SailState.HALF_SAIL)
+        {
+            shipParts.MainMast.transform.GetChild(0).gameObject.SetActive(true);
+            shipParts.ForeMast.transform.GetChild(0).gameObject.SetActive(false);
+            shipParts.MizzenMast.transform.GetChild(0).gameObject.SetActive(false);
+            return;
+        }
+        if (state == SailState.FULL_SAIL)
+        {
+            shipParts.MainMast.transform.GetChild(0).gameObject.SetActive(true);
+            shipParts.ForeMast.transform.GetChild(0).gameObject.SetActive(true);
+            shipParts.MizzenMast.transform.GetChild(0).gameObject.SetActive(true);
+            return;
+        }
     }
 }

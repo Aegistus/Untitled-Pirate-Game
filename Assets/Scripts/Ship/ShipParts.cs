@@ -17,6 +17,10 @@ public class ShipParts : MonoBehaviour
 
     [SerializeField] Transform ramParent;
 
+    public GameObject MainMast => mainMast;
+    public GameObject ForeMast => foreMast;
+    public GameObject MizzenMast => mizzenMast;
+
     Transform[] starboardBroadside;
     Transform[] portBroadside;
 
@@ -31,4 +35,5 @@ public class ShipParts : MonoBehaviour
         prowCannons = prowCannonsParent.GetComponentsInChildren<Transform>();
         sternCannons = sternCannonsParent.GetComponentsInChildren<Transform>();
     }
+
 }
