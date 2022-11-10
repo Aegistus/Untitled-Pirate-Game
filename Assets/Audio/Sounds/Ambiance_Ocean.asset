@@ -15,7 +15,7 @@ MonoBehaviour:
   soundName: Ambiance_Ocean
   audioVariants:
   - {fileID: 8300000, guid: 32a8e53a0d876e846a41d482a5164d0d, type: 3}
-  volume: 0.2
+  volume: 100
   volumeVariance: 0.1
   pitch: 1
   pitchVariance: 0.1

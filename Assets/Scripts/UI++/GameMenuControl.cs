@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Audio;
 
 
 public class GameMenuControl : MonoBehaviour
@@ -12,8 +11,15 @@ public class GameMenuControl : MonoBehaviour
     public GameObject pauseInfoOverlay;
     [SerializeField] private float timeSpeed = 0f;   //game speed when paused
 
+    SoundManager sound;
+    int menuSoundID;
+    int leaveMenuSoundID;
+
     public void Start()
     {
+        sound = SoundManager.Instance;
+        menuSoundID = sound.GetSoundID("Menu");
+        leaveMenuSoundID = sound.GetSoundID("LeaveMenu");
         pauseOverlay.SetActive(false);
         pauseInfoOverlay.SetActive(false);
     }
@@ -35,7 +41,7 @@ public class GameMenuControl : MonoBehaviour
 
     void Pause()
     {
-        FindObjectOfType<AudioManager>().Play("Menu");
+        sound.PlaySoundGlobal(menuSoundID);
         pauseOverlay.SetActive(true);
         Time.timeScale = timeSpeed;
         isPaused = true;
@@ -43,7 +49,7 @@ public class GameMenuControl : MonoBehaviour
 
     public void Resume() //unpause
     {
-        FindObjectOfType<AudioManager>().Play("LeaveMenu");
+        sound.PlaySoundGlobal(leaveMenuSoundID);
         pauseOverlay.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
@@ -65,14 +71,14 @@ public class GameMenuControl : MonoBehaviour
 
     public void Options() //in-detail info screen
     {
-        FindObjectOfType<AudioManager>().Play("Menu");
+        sound.PlaySoundGlobal(menuSoundID);
         pauseOverlay.SetActive(false);
         pauseInfoOverlay.SetActive(true);
     }
 
     public void Return() //in-detail info screen
     {
-        FindObjectOfType<AudioManager>().Play("LeaveMenu");
+        sound.PlaySoundGlobal(leaveMenuSoundID);
         pauseInfoOverlay.SetActive(false);
         pauseOverlay.SetActive(true);
     }

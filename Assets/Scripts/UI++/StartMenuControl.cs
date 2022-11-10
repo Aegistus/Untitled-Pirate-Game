@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Audio;
 
 
 public class StartMenuControl : MonoBehaviour
@@ -10,9 +9,15 @@ public class StartMenuControl : MonoBehaviour
     public GameObject startOverlay;
     public GameObject startInfoOverlay;
 
+    SoundManager sound;
+    int menuSoundID;
+    int leaveMenuSoundID;
+
     public void Start()
     {
-        FindObjectOfType<AudioManager>().Play("Menu");
+        sound = SoundManager.Instance;
+        menuSoundID = sound.GetSoundID("Menu");
+        leaveMenuSoundID = sound.GetSoundID("LeaveMenu");
         startOverlay.SetActive(true);
         startInfoOverlay.SetActive(false);
     }
@@ -24,14 +29,14 @@ public class StartMenuControl : MonoBehaviour
 
     public void Instructions() //only controls so far
     {
-        FindObjectOfType<AudioManager>().Play("Menu");
+        sound.PlaySoundGlobal(menuSoundID);
         startOverlay.SetActive(false);
         startInfoOverlay.SetActive(true);
     }
 
     public void Back() //back to start menu
     {
-        FindObjectOfType<AudioManager>().Play("LeaveMenu");
+        sound.PlaySoundGlobal(leaveMenuSoundID);
         startInfoOverlay.SetActive(false);
         startOverlay.SetActive(true);
     }

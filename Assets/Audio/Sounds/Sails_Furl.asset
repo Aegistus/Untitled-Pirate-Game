@@ -15,7 +15,7 @@ MonoBehaviour:
   soundName: Sails_Furl
   audioVariants:
   - {fileID: 8300000, guid: c47d4b73ad57d274b8527da9dc274a71, type: 3}
-  volume: 1
+  volume: 100
   volumeVariance: 0.1
   pitch: 1
   pitchVariance: 0.1
