@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2426661446532430267}
   - component: {fileID: 2426661446532430244}
   - component: {fileID: 468924056526163314}
+  - component: {fileID: 5880718047099228395}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -79,6 +80,24 @@ MonoBehaviour:
   portWeaponsParent: {fileID: 199583376915471534}
   prowWeaponsParent: {fileID: 4810160901743072292}
   sternWeaponsParent: {fileID: 865432914948574830}
+--- !u!114 &5880718047099228395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426661446532430246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cf1e7c3652e15439e6d8547b66b418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnHealthChange:
+    m_PersistentCalls:
+      m_Calls: []
+  OnWaterLevelChange:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &2539310821110173633
 PrefabInstance:
   m_ObjectHideFlags: 0

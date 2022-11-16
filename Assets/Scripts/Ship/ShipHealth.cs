@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ShipHealth : MonoBehaviour
 {
+    public UnityEvent OnHealthChange;
+    public UnityEvent OnWaterLevelChange;
     public static readonly float waterIncreaseRate = .2f;
 
     public int BottomHealth { get; private set; }
@@ -31,6 +34,7 @@ public class ShipHealth : MonoBehaviour
         DeckHealth -= damage.deck;
         SailHealth -= damage.sails;
         ClampHealth();
+        OnHealthChange.Invoke();
     }
 
     public void Repair(RepairValue repair)
@@ -39,6 +43,7 @@ public class ShipHealth : MonoBehaviour
         DeckHealth += repair.deck;
         SailHealth += repair.sails;
         ClampHealth();
+        OnHealthChange.Invoke();
     }
 
     void ClampHealth()
@@ -54,6 +59,7 @@ public class ShipHealth : MonoBehaviour
         {
             yield return new WaitForSeconds(1f);
             WaterLevel += (MaxBottomHealth - BottomHealth) * waterIncreaseRate;
+            OnWaterLevelChange.Invoke();
             if (WaterLevel >= MaxWaterLevel)
             {
                 Sink();
