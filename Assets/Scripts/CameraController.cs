@@ -22,6 +22,10 @@ public class CameraController : MonoBehaviour
 
     void Awake()
     {
+        if (target == null)
+        {
+            target = FindObjectOfType<PlayerController>().transform;
+        }
         targetZoom = transform.position.y;
     }
 

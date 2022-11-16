@@ -91,15 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfPositionalSources: 100
   mixerGroup: {fileID: 0}
-  sounds:
-  - {fileID: 11400000, guid: e20619f7bc0966b4380a074fbacaaa49, type: 2}
-  - {fileID: 11400000, guid: fea927eace1d3e0439aa0141e1db02da, type: 2}
-  - {fileID: 11400000, guid: f54e6dbd69432524d9e26a72cf5ca3a6, type: 2}
-  - {fileID: 11400000, guid: e3009dc45bb713442a4de63706895200, type: 2}
-  - {fileID: 11400000, guid: 600a2b6245357974ca97f38fe691fae0, type: 2}
-  - {fileID: 11400000, guid: ad46b09ebc5b6214bafabbb7f3996bad, type: 2}
-  - {fileID: 11400000, guid: 175edc66280e02f4094148f4da8f368b, type: 2}
-  - {fileID: 11400000, guid: 55a9c9c1de021ab418f7d91fb503fa5e, type: 2}
+  soundPath: Sounds
 --- !u!1 &1183917371881454489
 GameObject:
   m_ObjectHideFlags: 0

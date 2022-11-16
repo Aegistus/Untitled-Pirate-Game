@@ -10,8 +10,9 @@ public class SoundManager : MonoBehaviour
 	public int numOfPositionalSources = 100;
 
 	public AudioMixerGroup mixerGroup;
+	[SerializeField] string soundPath;
 
-	[SerializeField]
+	//[SerializeField]
 	private Sound[] sounds;
 
 	private Queue<AudioSource> positionalSources = new Queue<AudioSource>();
@@ -27,6 +28,7 @@ public class SoundManager : MonoBehaviour
 			Instance = this;
 			//DontDestroyOnLoad(gameObject);
 		}
+		sounds = Resources.LoadAll<Sound>(soundPath);
 		foreach (Sound s in sounds)
 		{
 			s.source = gameObject.AddComponent<AudioSource>();
