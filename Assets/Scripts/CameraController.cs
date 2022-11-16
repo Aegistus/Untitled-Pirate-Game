@@ -27,6 +27,8 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+        float y = Mathf.Lerp(transform.position.y, targetZoom, zoomSpeed * Time.deltaTime);
+        transform.position = new Vector3(transform.position.x, y, transform.position.z);
         if (followCursor)
         {
             Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out rayHit, 1000f);
@@ -47,8 +49,7 @@ public class CameraController : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, target.position, translationSmoothSpeed * Time.deltaTime);
         }
         transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, rotationSmoothSpeed * Time.deltaTime);
-        float y = Mathf.Lerp(transform.position.y, targetZoom, zoomSpeed * Time.deltaTime);
-        transform.position = new Vector3(transform.position.x, y, transform.position.z);
+
     }
 
     public void FollowCursor(bool follow)

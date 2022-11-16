@@ -13,7 +13,12 @@ public class AmbientAudio : MonoBehaviour
     {
         sound = SoundManager.Instance;
         oceanAmbianceID = sound.GetSoundID(oceanAmbianceString);
-        Transform playerTransform = FindObjectOfType<PlayerController>().transform;
-        sound.PlaySoundAtPosition(oceanAmbianceID, playerTransform.position, playerTransform);
+        PlayerController player = FindObjectOfType<PlayerController>();
+        if (player != null)
+        {
+            Transform playerTransform = player.transform;
+            sound.PlaySoundAtPosition(oceanAmbianceID, playerTransform.position, playerTransform);
+        }
+
     }
 }
