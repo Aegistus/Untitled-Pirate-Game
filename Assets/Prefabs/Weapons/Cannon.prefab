@@ -48,11 +48,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f738cd1709dd9459f0924c50b89e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 4735254442795308358, guid: 48d2ab408c170e344b64169f1ed6b265, type: 3}
+  projectileName: Cannonball
   muzzleTransform: {fileID: 1057286026412887224}
-  maxReloadTime: 3
-  bulletSpeed: 50
-  amountOfCannonBalls: 100000
+  reloadTime: 3
 --- !u!33 &3395998
 MeshFilter:
   m_ObjectHideFlags: 0

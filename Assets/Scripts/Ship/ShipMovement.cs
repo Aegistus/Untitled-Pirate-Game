@@ -6,7 +6,11 @@ public class ShipMovement : MonoBehaviour
 {
     public enum SailState {ANCHORED, HALF_SAIL, FULL_SAIL}
 
-    public float turnSpeed = 40;
+    // turn speed when at half sail.
+    public float anchoredTurnSpeed = 40;
+    public float halfSailTurnSpeed = 30;
+    public float fullSailTurnSpeed = 20;
+
     public float moveSpeed = 1.0f;
     public float acceleration = 1f;
 
@@ -14,6 +18,7 @@ public class ShipMovement : MonoBehaviour
 
     float currentSpeed = 0f;
     float targetSpeed = 0f;
+    float currentTurnSpeed = 0f;
 
     ShipParts shipParts;
 
@@ -31,6 +36,7 @@ public class ShipMovement : MonoBehaviour
         furlSoundID = sound.GetSoundID(furlSound);
         unfurlSoundID = sound.GetSoundID(unfurlSound);
         state = SailState.ANCHORED;
+        currentTurnSpeed = anchoredTurnSpeed;
         UpdateSails();
     }
 
@@ -45,6 +51,7 @@ public class ShipMovement : MonoBehaviour
         {
             state++;
             targetSpeed += moveSpeed;
+            UpdateTurnSpeed();
             sound.PlaySoundAtPosition(unfurlSoundID, transform.position);
             UpdateSails();
         }
@@ -56,6 +63,7 @@ public class ShipMovement : MonoBehaviour
         {
             state--;
             targetSpeed -= moveSpeed;
+            UpdateTurnSpeed();
             sound.PlaySoundAtPosition(furlSoundID, transform.position);
             UpdateSails();
         }
@@ -70,7 +78,7 @@ public class ShipMovement : MonoBehaviour
     public void Turn(float rotation)
     {
         rotation = Mathf.Clamp(rotation, -1, 1);
-        transform.Rotate(0f, rotation * turnSpeed * Time.deltaTime, 0f);
+        transform.Rotate(0f, rotation * currentTurnSpeed * Time.deltaTime, 0f);
     }
 
     void UpdateSails()
@@ -95,6 +103,19 @@ public class ShipMovement : MonoBehaviour
             shipParts.ForeMast.transform.GetChild(0).gameObject.SetActive(true);
             shipParts.MizzenMast.transform.GetChild(0).gameObject.SetActive(true);
             return;
+        }
+    }
+
+    void UpdateTurnSpeed()
+    {
+        switch (state)
+        {
+            case SailState.ANCHORED: currentTurnSpeed = anchoredTurnSpeed;
+            break;
+            case SailState.HALF_SAIL: currentTurnSpeed = halfSailTurnSpeed;
+            break;
+            case SailState.FULL_SAIL: currentTurnSpeed = fullSailTurnSpeed;
+            break;
         }
     }
 }
