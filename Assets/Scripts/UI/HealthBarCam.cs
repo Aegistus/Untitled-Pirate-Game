@@ -13,6 +13,7 @@ public class HealthBarCam : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.LookAt(transform.position + cam.forward);
+        transform.LookAt(cam.position);
+        transform.localEulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
     }
 }

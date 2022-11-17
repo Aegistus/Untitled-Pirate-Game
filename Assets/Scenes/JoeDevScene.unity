@@ -340,18 +340,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5880718047099228395, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
-      propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5880718047099228395, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
-      propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5880718047099228395, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
-      propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
 --- !u!1 &217052595
