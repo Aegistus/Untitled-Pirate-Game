@@ -6,9 +6,16 @@ public class ProjectileController : MonoBehaviour
 {
     [SerializeField] float bulletSpeed = 5f;
     public DamageValue damage;
+
+    Rigidbody rig;
+
+    void Awake()
+    {
+        rig = GetComponent<Rigidbody>();
+    }
+
     private void OnEnable()
     {
-        Rigidbody rig = GetComponent<Rigidbody>();
         rig.AddForce(transform.forward * bulletSpeed, ForceMode.VelocityChange);
     }
 
@@ -19,7 +26,7 @@ public class ProjectileController : MonoBehaviour
         {
             s.Damage(damage);
         }
-
+        rig.velocity = Vector3.zero;
         gameObject.SetActive(false);
     }
 }
