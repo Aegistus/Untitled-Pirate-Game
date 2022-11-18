@@ -33,6 +33,7 @@ public class CameraController : MonoBehaviour
     {
         float y = Mathf.Lerp(transform.position.y, targetZoom, zoomSpeed * Time.deltaTime);
         transform.position = new Vector3(transform.position.x, y, transform.position.z);
+        // if in free cam mode
         if (followCursor)
         {
             Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out rayHit, 1000f);
@@ -48,12 +49,12 @@ public class CameraController : MonoBehaviour
             }
             transform.position = Vector3.Lerp(transform.position, cursorPosition, cursorFollowSpeed * Time.deltaTime);
         }
+        // if in not-free cam mode
         else
         {
             transform.position = Vector3.Lerp(transform.position, target.position, translationSmoothSpeed * Time.deltaTime);
         }
         transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, rotationSmoothSpeed * Time.deltaTime);
-
     }
 
     public void FollowCursor(bool follow)

@@ -64,9 +64,10 @@ MonoBehaviour:
   anchoredTurnSpeed: 20
   halfSailTurnSpeed: 15
   fullSailTurnSpeed: 10
-  moveSpeed: 5
-  acceleration: 1
-  turnAcceleration: 1
+  turnAcceleration: 0.7
+  turnPivot: {x: 0, y: 0, z: 10}
+  moveSpeed: 8
+  acceleration: 0.6
 --- !u!114 &468924056526163314
 MonoBehaviour:
   m_ObjectHideFlags: 0
