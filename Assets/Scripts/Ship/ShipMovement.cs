@@ -13,12 +13,14 @@ public class ShipMovement : MonoBehaviour
 
     public float moveSpeed = 1.0f;
     public float acceleration = 1f;
+    public float turnAcceleration = 1f;
 
     public SailState CurrentSailState => state;
 
     float currentSpeed = 0f;
     float targetSpeed = 0f;
     float currentTurnSpeed = 0f;
+    float targetTurnSpeed = 0f;
 
     ShipParts shipParts;
 
@@ -43,6 +45,7 @@ public class ShipMovement : MonoBehaviour
     void Update()
     {
         Move();
+        currentTurnSpeed = Mathf.Lerp(currentTurnSpeed, targetTurnSpeed, turnAcceleration * Time.deltaTime);
     }
 
     public void IncreaseSpeed()
@@ -110,11 +113,11 @@ public class ShipMovement : MonoBehaviour
     {
         switch (state)
         {
-            case SailState.ANCHORED: currentTurnSpeed = anchoredTurnSpeed;
+            case SailState.ANCHORED: targetTurnSpeed = anchoredTurnSpeed;
             break;
-            case SailState.HALF_SAIL: currentTurnSpeed = halfSailTurnSpeed;
+            case SailState.HALF_SAIL: targetTurnSpeed = halfSailTurnSpeed;
             break;
-            case SailState.FULL_SAIL: currentTurnSpeed = fullSailTurnSpeed;
+            case SailState.FULL_SAIL: targetTurnSpeed = fullSailTurnSpeed;
             break;
         }
     }

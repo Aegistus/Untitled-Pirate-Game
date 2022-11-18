@@ -61,9 +61,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83e0e1b0f1afe041b74865bc77028bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: 10
+  anchoredTurnSpeed: 20
+  halfSailTurnSpeed: 15
+  fullSailTurnSpeed: 10
   moveSpeed: 5
   acceleration: 1
+  turnAcceleration: 1
 --- !u!114 &468924056526163314
 MonoBehaviour:
   m_ObjectHideFlags: 0
