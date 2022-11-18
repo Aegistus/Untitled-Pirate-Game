@@ -413,6 +413,91 @@ MonoBehaviour:
   m_VoxelSize: 3.3333333
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 7d77dccab4fef8f4eac7fb465f05ac57, type: 2}
+--- !u!1 &255275264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2996342878210886300, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+  m_PrefabInstance: {fileID: 2996342877485955962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &255275269 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2996342878210886291, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+  m_PrefabInstance: {fileID: 2996342877485955962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &255275271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255275264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711cc1651e9ae9b498b5fe6908542b47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starboardWeaponsParent: {fileID: 1639638482}
+  portWeaponsParent: {fileID: 741591702}
+  prowWeaponsParent: {fileID: 1666296601}
+  sternWeaponsParent: {fileID: 1441745281}
+--- !u!1 &705065878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 705065879}
+  - component: {fileID: 705065880}
+  m_Layer: 0
+  m_Name: Starboard Sensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &705065879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705065878}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 6, y: 8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255275269}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &705065880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705065878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933f27ed8a5cf43359d7caf0a5f5e732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDetectionRadius: 1
+  viewRadius: 80
+  viewAngle: 30
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 8
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 64
+  visibleTargets: []
+--- !u!4 &741591702 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5738964579427598744, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+  m_PrefabInstance: {fileID: 2996342877485955962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &880531968
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +592,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1125918557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1125918558}
+  - component: {fileID: 1125918559}
+  m_Layer: 0
+  m_Name: Port Sensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1125918558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125918557}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -6, y: 8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 255275269}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1125918559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125918557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933f27ed8a5cf43359d7caf0a5f5e732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDetectionRadius: 1
+  viewRadius: 80
+  viewAngle: 30
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 8
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 64
+  visibleTargets: []
 --- !u!1 &1386438401
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +743,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1441745281 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4711705568945541976, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+  m_PrefabInstance: {fileID: 2996342877485955962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1639638482 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 379223095423854105, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+  m_PrefabInstance: {fileID: 2996342877485955962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1666296601 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1126157450925574418, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+  m_PrefabInstance: {fileID: 2996342877485955962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1804620698
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,6 +1016,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2996342878210886289, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+      propertyPath: portSensor
+      value: 
+      objectReference: {fileID: 1125918559}
+    - target: {fileID: 2996342878210886289, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+      propertyPath: starboardSensor
+      value: 
+      objectReference: {fileID: 705065880}
     - target: {fileID: 2996342878210886291, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
       propertyPath: m_RootOrder
       value: 8

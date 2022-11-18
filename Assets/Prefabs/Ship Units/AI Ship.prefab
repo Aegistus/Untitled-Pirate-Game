@@ -1,5 +1,113 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &705065878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 705065879}
+  - component: {fileID: 705065880}
+  m_Layer: 0
+  m_Name: Starboard Sensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &705065879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705065878}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 6, y: 8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2996342878210886291}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &705065880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705065878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933f27ed8a5cf43359d7caf0a5f5e732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDetectionRadius: 1
+  viewRadius: 80
+  viewAngle: 30
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 8
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 64
+  visibleTargets: []
+--- !u!1 &1125918557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1125918558}
+  - component: {fileID: 1125918559}
+  m_Layer: 0
+  m_Name: Port Sensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1125918558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125918557}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -6, y: 8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2996342878210886291}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1125918559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125918557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933f27ed8a5cf43359d7caf0a5f5e732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDetectionRadius: 1
+  viewRadius: 80
+  viewAngle: 30
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 8
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 64
+  visibleTargets: []
 --- !u!1 &2996342878210886300
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,6 +122,7 @@ GameObject:
   - component: {fileID: 2996342878210886301}
   - component: {fileID: 3488903339610133144}
   - component: {fileID: 2996342878210886288}
+  - component: {fileID: 255275271}
   m_Layer: 0
   m_Name: AI Ship
   m_TagString: Untagged
@@ -35,6 +144,8 @@ Transform:
   m_Children:
   - {fileID: 1616373839967627886}
   - {fileID: 4822741135981932026}
+  - {fileID: 705065879}
+  - {fileID: 1125918558}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -50,6 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de85d54f3919a74780cef4f32ae0d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  starboardSensor: {fileID: 705065880}
+  portSensor: {fileID: 1125918559}
 --- !u!114 &2996342878210886294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +244,22 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &255275271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2996342878210886300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711cc1651e9ae9b498b5fe6908542b47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starboardWeaponsParent: {fileID: 379223095423854105}
+  portWeaponsParent: {fileID: 5738964579427598744}
+  prowWeaponsParent: {fileID: 1126157450925574418}
+  sternWeaponsParent: {fileID: 4711705568945541976}
 --- !u!1001 &5959522491244967286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -298,8 +427,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
+--- !u!4 &379223095423854105 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7719100764752540910, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
+  m_PrefabInstance: {fileID: 7952376564545065719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1126157450925574418 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7060639701221088229, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
+  m_PrefabInstance: {fileID: 7952376564545065719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1616373839967627886 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8660992917107161241, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
+  m_PrefabInstance: {fileID: 7952376564545065719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4711705568945541976 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3404671953194385839, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
+  m_PrefabInstance: {fileID: 7952376564545065719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5738964579427598744 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2447813853104132975, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
   m_PrefabInstance: {fileID: 7952376564545065719}
   m_PrefabAsset: {fileID: 0}

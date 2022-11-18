@@ -6,6 +6,8 @@ using System;
 public class FieldOfView : MonoBehaviour
 {
 	public event Action OnTargetFound;
+	public bool HasTarget => visibleTargets.Count > 0;
+	
 	public float minDetectionRadius = 1f;
 	public float viewRadius;
 	[Range(0,360)]
@@ -16,6 +18,7 @@ public class FieldOfView : MonoBehaviour
 
 	[HideInInspector]
 	public List<Transform> visibleTargets = new List<Transform>();
+
 
 	void Start()
 	{

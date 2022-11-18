@@ -8,6 +8,9 @@ public class AIController : MonoBehaviour
 {
     public Vector3 Destination => navAgent.destination;
 
+    public FieldOfView starboardSensor;
+    public FieldOfView portSensor;
+
     StateMachine stateMachine = new StateMachine();
     NavMeshAgent navAgent;
     ShipMovement movement;

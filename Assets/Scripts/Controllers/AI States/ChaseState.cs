@@ -5,10 +5,12 @@ using UnityEngine;
 public class ChaseState : AIState
 {
     float broadsideDistance = 50f;
+    ShipWeapons weapons;
 
     public ChaseState(GameObject gameObject, AIController controller) : base(gameObject, controller)
     {
         transitionsTo.Add(new Transition(typeof(WanderState), () => fov.visibleTargets.Count == 0));
+        weapons = gameObject.GetComponent<ShipWeapons>();
     }
 
     public override void BeforeExecution()
@@ -21,6 +23,14 @@ public class ChaseState : AIState
         if (fov.visibleTargets.Count > 0)
         {
             controller.SetDestination(PickTargetSide(fov.visibleTargets[0]));
+        }
+        if (controller.portSensor.HasTarget)
+        {
+            weapons.FireWeaponsOnSide(ShipDirection.Port);
+        }
+        if (controller.starboardSensor.HasTarget)
+        {
+            weapons.FireWeaponsOnSide(ShipDirection.Starboard);
         }
     }
 
