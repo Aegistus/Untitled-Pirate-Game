@@ -29,6 +29,7 @@ public class WanderState : AIState
         {
             SetRandomDestination();
         }
+        controller.TurnTowardsPath();
     }
 
     public override void AfterExecution()

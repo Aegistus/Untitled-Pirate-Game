@@ -23,6 +23,7 @@ public class AIController : MonoBehaviour
         {
             { typeof(WanderState), new WanderState(gameObject, this) },
             { typeof(ChaseState), new ChaseState(gameObject, this) },
+            { typeof(AttackState), new AttackState(gameObject, this) },
         };
         stateMachine.SetStates(states, typeof(WanderState));
     }
@@ -47,7 +48,11 @@ public class AIController : MonoBehaviour
     void Update()
     {
         stateMachine.ExecuteState(Time.deltaTime);
-        // points ship towards next point on path
+    }
+
+    // points ship towards next point on navAgent's path
+    public void TurnTowardsPath()
+    {
         if (navAgent.hasPath && navAgent.path.corners.Length > 1)
         {
             float angleDirection = AngleDirection(-transform.forward, transform.position - navAgent.path.corners[1], Vector3.up);
@@ -55,8 +60,14 @@ public class AIController : MonoBehaviour
         }
     }
 
+    public void TurnTowards(Vector3 target, Vector3 forward)
+    {
+        float angleDirection = AngleDirection(-forward, transform.position - target, Vector3.up);
+        movement.Turn(angleDirection);
+    }
+
     // returns -1 for left, 1 for right, and 0 if already looking
-    float AngleDirection(Vector3 forward, Vector3 targetDirection, Vector3 upVector)
+    public float AngleDirection(Vector3 forward, Vector3 targetDirection, Vector3 upVector)
     {
         Vector3 perpendicular = Vector3.Cross(forward, targetDirection);
         float direction = Vector3.Dot(perpendicular, upVector);

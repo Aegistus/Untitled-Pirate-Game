@@ -10,6 +10,7 @@ public class ChaseState : AIState
     public ChaseState(GameObject gameObject, AIController controller) : base(gameObject, controller)
     {
         transitionsTo.Add(new Transition(typeof(WanderState), () => fov.visibleTargets.Count == 0));
+        transitionsTo.Add(new Transition(typeof(AttackState), () => controller.starboardSensor.HasTarget || controller.portSensor.HasTarget));
         weapons = gameObject.GetComponent<ShipWeapons>();
     }
 
@@ -24,14 +25,7 @@ public class ChaseState : AIState
         {
             controller.SetDestination(PickTargetSide(fov.visibleTargets[0]));
         }
-        if (controller.portSensor.HasTarget)
-        {
-            weapons.FireWeaponsOnSide(ShipDirection.Port);
-        }
-        if (controller.starboardSensor.HasTarget)
-        {
-            weapons.FireWeaponsOnSide(ShipDirection.Starboard);
-        }
+        controller.TurnTowardsPath();
     }
 
     public override void AfterExecution()
