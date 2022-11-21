@@ -131,10 +131,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   translationSmoothSpeed: 1
-  rotationSmoothSpeed: 0.5
+  rotationSmoothSpeed: 2
   cursorFollowSpeed: 2
   maxCursorFollowDistance: 50
   zoomIncrement: 20
   zoomSpeed: 10
-  minZoom: -10
+  minZoom: -40
   maxZoom: 250

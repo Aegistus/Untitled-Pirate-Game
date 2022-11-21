@@ -927,9 +927,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7933534
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.60876137
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 7633918091361757878, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7633918091361757878, guid: b187bdef2381b644891d2b84f07de158, type: 3}
+      propertyPath: minZoom
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 7633918091361757878, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: rotationSmoothSpeed
