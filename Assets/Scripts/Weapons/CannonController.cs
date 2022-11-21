@@ -6,11 +6,14 @@ public class CannonController : MonoBehaviour, ICannon
 {
     [SerializeField] string projectileName = "Cannonball";
     [SerializeField] Transform muzzleTransform;
+    [SerializeField] ParticleSystem smokeEffect;
     [SerializeField] float reloadTime = 3f;
 
     int projectileID;
     bool isLoaded = true;
     PoolManager pool;
+
+    // sound
     SoundManager sound;
     string fireSoundString = "Cannon_Shot";
     string reloadSoundString = "Cannon_Reload";
@@ -46,6 +49,7 @@ public class CannonController : MonoBehaviour, ICannon
         }
         pool.SpawnObjectWithLifetime(projectileID, muzzleTransform.position, muzzleTransform.rotation, 10f);
         sound.PlaySoundAtPosition(fireSoundID, transform.position);
+        smokeEffect.Play();
         isLoaded = false;
         Reload();
     }
