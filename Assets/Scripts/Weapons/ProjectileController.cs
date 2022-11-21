@@ -8,10 +8,20 @@ public class ProjectileController : MonoBehaviour
     public DamageValue damage;
 
     Rigidbody rig;
+    PoolManager pool;
+    int waterImpactID;
+    int shipImpactID;
 
     void Awake()
     {
         rig = GetComponent<Rigidbody>();
+    }
+
+    void Start()
+    {
+        pool = PoolManager.Instance;
+        waterImpactID = pool.GetPoolObjectID("Impact_Water");
+        shipImpactID = pool.GetPoolObjectID("Impact_Ship");
     }
 
     private void OnEnable()
@@ -25,6 +35,11 @@ public class ProjectileController : MonoBehaviour
         if (s != null)
         {
             s.Damage(damage);
+            pool.SpawnObjectWithLifetime(shipImpactID, transform.position, transform.rotation, 5f);
+        }
+        else
+        {
+            pool.SpawnObjectWithLifetime(waterImpactID, transform.position, transform.rotation, 5f);
         }
         rig.velocity = Vector3.zero;
         gameObject.SetActive(false);

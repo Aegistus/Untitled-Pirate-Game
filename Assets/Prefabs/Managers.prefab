@@ -140,6 +140,12 @@ MonoBehaviour:
   - objectName: Cannonball
     objectPrefab: {fileID: 4735254442795308358, guid: 48d2ab408c170e344b64169f1ed6b265, type: 3}
     size: 100
+  - objectName: Impact_Ship
+    objectPrefab: {fileID: 1180248314969840, guid: 31cb8e9adbbcd5f42bda290ea5b5ccab, type: 3}
+    size: 100
+  - objectName: Impact_Water
+    objectPrefab: {fileID: 1932552764689772, guid: 67c0d0380e187e442baa3fdb4bc5a07a, type: 3}
+    size: 100
 --- !u!1 &1183917372131532694
 GameObject:
   m_ObjectHideFlags: 0
