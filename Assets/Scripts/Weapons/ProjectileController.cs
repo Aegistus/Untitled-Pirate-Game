@@ -9,8 +9,11 @@ public class ProjectileController : MonoBehaviour
 
     Rigidbody rig;
     PoolManager pool;
+    SoundManager sound;
     int waterImpactID;
+    int waterSoundID;
     int shipImpactID;
+    int shipSoundID;
 
     void Awake()
     {
@@ -20,8 +23,11 @@ public class ProjectileController : MonoBehaviour
     void Start()
     {
         pool = PoolManager.Instance;
+        sound = SoundManager.Instance;
         waterImpactID = pool.GetPoolObjectID("Impact_Water");
+        waterSoundID = sound.GetSoundID("Cannonball_Impact_Water");
         shipImpactID = pool.GetPoolObjectID("Impact_Ship");
+        shipSoundID = sound.GetSoundID("Cannonball_Impact_Ship");
     }
 
     private void OnEnable()
@@ -36,10 +42,12 @@ public class ProjectileController : MonoBehaviour
         {
             s.Damage(damage);
             pool.SpawnObjectWithLifetime(shipImpactID, transform.position, transform.rotation, 5f);
+            sound.PlaySoundAtPosition(shipSoundID, transform.position);
         }
         else
         {
             pool.SpawnObjectWithLifetime(waterImpactID, transform.position, transform.rotation, 5f);
+            sound.PlaySoundAtPosition(waterSoundID, transform.position);
         }
         rig.velocity = Vector3.zero;
         gameObject.SetActive(false);
