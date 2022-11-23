@@ -9,22 +9,22 @@ public class ShipHealth : MonoBehaviour
     public UnityEvent OnWaterLevelChange;
     public static readonly float waterIncreaseRate = .02f;
 
+    [SerializeField] int maxBottomHealth = 1000;
+    [SerializeField] int maxDeckHealth = 1000;
+    [SerializeField] int maxSailHealth = 1000;
+
     public int BottomHealth { get; private set; }
     public int DeckHealth { get; private set; }
     public int SailHealth { get; private set; }
-
-    public int MaxBottomHealth { get; private set; } = 1000;
-    public int MaxDeckHealth { get; private set; } = 1000;
-    public int MaxSailHealth { get; private set; } = 1000;
 
     public float WaterLevel { get; private set; } = 0f;
     public float MaxWaterLevel { get; private set; } = 1000f;
  
     void Awake()
     {
-        BottomHealth = MaxBottomHealth;
-        DeckHealth = MaxDeckHealth;
-        SailHealth = MaxSailHealth;
+        BottomHealth = maxBottomHealth;
+        DeckHealth = maxDeckHealth;
+        SailHealth = maxSailHealth;
         StartCoroutine(UpdateWaterLevel());
     }
 
@@ -48,9 +48,9 @@ public class ShipHealth : MonoBehaviour
 
     void ClampHealth()
     {
-        BottomHealth = Mathf.Clamp(BottomHealth, 0, MaxBottomHealth);
-        DeckHealth = Mathf.Clamp(DeckHealth, 0, MaxDeckHealth);
-        SailHealth = Mathf.Clamp(SailHealth, 0, MaxSailHealth);
+        BottomHealth = Mathf.Clamp(BottomHealth, 0, maxBottomHealth);
+        DeckHealth = Mathf.Clamp(DeckHealth, 0, maxDeckHealth);
+        SailHealth = Mathf.Clamp(SailHealth, 0, maxSailHealth);
     }
 
     IEnumerator UpdateWaterLevel()
@@ -58,7 +58,7 @@ public class ShipHealth : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(1f);
-            WaterLevel += (MaxBottomHealth - BottomHealth) * waterIncreaseRate;
+            WaterLevel += (maxBottomHealth - BottomHealth) * waterIncreaseRate;
             OnWaterLevelChange.Invoke();
             if (WaterLevel >= MaxWaterLevel)
             {
