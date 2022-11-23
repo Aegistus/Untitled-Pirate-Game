@@ -7,18 +7,18 @@ public class ShipHealth : MonoBehaviour
 {
     public UnityEvent OnHealthChange;
     public UnityEvent OnWaterLevelChange;
-    public static readonly float waterIncreaseRate = .2f;
+    public static readonly float waterIncreaseRate = .02f;
 
     public int BottomHealth { get; private set; }
     public int DeckHealth { get; private set; }
     public int SailHealth { get; private set; }
 
-    public int MaxBottomHealth { get; private set; }
-    public int MaxDeckHealth { get; private set; }
-    public int MaxSailHealth { get; private set; }
+    public int MaxBottomHealth { get; private set; } = 1000;
+    public int MaxDeckHealth { get; private set; } = 1000;
+    public int MaxSailHealth { get; private set; } = 1000;
 
     public float WaterLevel { get; private set; } = 0f;
-    public float MaxWaterLevel { get; private set; } = 100f;
+    public float MaxWaterLevel { get; private set; } = 1000f;
  
     void Awake()
     {
@@ -48,9 +48,9 @@ public class ShipHealth : MonoBehaviour
 
     void ClampHealth()
     {
-        Mathf.Clamp(BottomHealth, 0, MaxBottomHealth);
-        Mathf.Clamp(DeckHealth, 0, MaxDeckHealth);
-        Mathf.Clamp(BottomHealth, 0, MaxBottomHealth);
+        BottomHealth = Mathf.Clamp(BottomHealth, 0, MaxBottomHealth);
+        DeckHealth = Mathf.Clamp(DeckHealth, 0, MaxDeckHealth);
+        SailHealth = Mathf.Clamp(SailHealth, 0, MaxSailHealth);
     }
 
     IEnumerator UpdateWaterLevel()

@@ -31,7 +31,7 @@ public class ProjectileController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        ShipHealth s = collision.gameObject.GetComponent<ShipHealth>();
+        ShipHealth s = collision.gameObject.GetComponentInParent<ShipHealth>();
         if (s != null)
         {
             s.Damage(damage);

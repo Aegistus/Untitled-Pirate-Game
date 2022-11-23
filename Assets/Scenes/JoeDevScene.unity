@@ -943,18 +943,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 75
       objectReference: {fileID: 0}
-    - target: {fileID: 7633918091361757878, guid: b187bdef2381b644891d2b84f07de158, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7633918091361757878, guid: b187bdef2381b644891d2b84f07de158, type: 3}
-      propertyPath: minZoom
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 7633918091361757878, guid: b187bdef2381b644891d2b84f07de158, type: 3}
-      propertyPath: rotationSmoothSpeed
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7633918091361757879, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: m_Name
       value: Camera Holder
