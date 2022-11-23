@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
+
 
 public class WorldBoundary : MonoBehaviour
 {
@@ -10,10 +12,13 @@ public class WorldBoundary : MonoBehaviour
     float boundaryRadiusSquared;
     Transform player;
     ShipHealth playerHealth;
+    PostProcessVolume stormVolume;
+    bool inStorm = false;
 
     void Awake()
     {
         boundaryRadiusSquared = Mathf.Pow(boundaryRadius, 2);
+        stormVolume = GetComponent<PostProcessVolume>();
     }
 
     void Start()
@@ -26,7 +31,20 @@ public class WorldBoundary : MonoBehaviour
     {
         if ((transform.position - player.position).sqrMagnitude > boundaryRadiusSquared)
         {
-            print("Player out of bounds");
+            playerHealth.Damage(stormDamage);
+            inStorm = true;
+        }
+        else
+        {
+            inStorm = false;    
+        }
+        if (inStorm && !stormVolume.enabled)
+        {
+            stormVolume.enabled = true;
+        }
+        if (!inStorm && stormVolume.enabled)
+        {
+            stormVolume.enabled = false;
         }
     }
 }
