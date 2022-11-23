@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8af0e3fab035dc419adb6218dd391f1, type: 3}
-  m_Name: Cannonball_Impact_Water
+  m_Name: Cannonball_Impact_Ship
   m_EditorClassIdentifier: 
-  soundName: Cannonball_Impact_Water
+  soundName: Cannonball_Impact_Ship
   audioVariants:
-  - {fileID: 8300000, guid: e2e9ea7b971f5d842b26591a741bbf11, type: 3}
-  - {fileID: 8300000, guid: 7461bf2d2961d8b4da283dd27f6f8edc, type: 3}
-  - {fileID: 8300000, guid: b93cd1e5c3b2c71408a75bea5411c392, type: 3}
-  - {fileID: 8300000, guid: a4015d344a60d034681715bf149743c1, type: 3}
-  - {fileID: 8300000, guid: 243b1e319418f1f458bad167d6678a01, type: 3}
+  - {fileID: 8300000, guid: c7eebd332ad5a704fbb5b803a21c0f41, type: 3}
+  - {fileID: 8300000, guid: aad632dd617b4b649be8e75654cfbcff, type: 3}
+  - {fileID: 8300000, guid: 46c2090732a2827418bec6819b951ea6, type: 3}
+  - {fileID: 8300000, guid: b34e6cf4feeb61f4aa2045a05599729f, type: 3}
+  - {fileID: 8300000, guid: 948d9a42e340aff4eae9a24e44663a49, type: 3}
   volume: 1
-  volumeVariance: 0.1
+  volumeVariance: 0.2
   pitch: 1
   pitchVariance: 0.2
   minimunDistance: 1
