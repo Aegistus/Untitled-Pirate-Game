@@ -769,272 +769,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: ef45dc6b72355bc419c08a51f4a63a5c, type: 3}
---- !u!1 &4920271981436364814
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4920271981436641996}
-  - component: {fileID: 4920271981437492674}
-  - component: {fileID: 4920271981438608726}
-  m_Layer: 0
-  m_Name: SM_Veh_Extra_Gun_01_Barrel_Pirate
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4920271981436641996
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920271981436364814}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.00000019073487, y: 0.008189077, z: 0.27946347}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4920271981436689990}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4920271981437492674
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920271981436364814}
-  m_Mesh: {fileID: 4300002, guid: 344039e8dcbf3124bb7d74c13fe3a05a, type: 3}
---- !u!23 &4920271981438608726
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920271981436364814}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5e1235b2e417983469723d36f05de88d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &4920271981436371694
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4920271981436689990}
-  - component: {fileID: 4920271981437475228}
-  - component: {fileID: 4920271981438549384}
-  - component: {fileID: 4948368330303633456}
-  m_Layer: 0
-  m_Name: SM_Veh_Extra_Gun_01_Pirate
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4920271981436689990
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920271981436371694}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4920271981436641996}
-  - {fileID: 4920271981436697804}
-  m_Father: {fileID: 8466352859764008122}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4920271981437475228
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920271981436371694}
-  m_Mesh: {fileID: 4300000, guid: 344039e8dcbf3124bb7d74c13fe3a05a, type: 3}
---- !u!23 &4920271981438549384
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920271981436371694}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5e1235b2e417983469723d36f05de88d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4948368330303633456
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920271981436371694}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43149170228305394, guid: 1455c0eb9132e9d45a9063f908bb9e6c, type: 2}
---- !u!1 &4920271981436389654
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4920271981436697804}
-  - component: {fileID: 4920271981437473652}
-  - component: {fileID: 4920271981438550694}
-  m_Layer: 0
-  m_Name: SM_Veh_Extra_Gun_01_Cover_Pirate
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4920271981436697804
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920271981436389654}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0049023735, y: 0.467234, z: 0.34034312}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4920271981436689990}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4920271981437473652
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920271981436389654}
-  m_Mesh: {fileID: 4300004, guid: 344039e8dcbf3124bb7d74c13fe3a05a, type: 3}
---- !u!23 &4920271981438550694
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4920271981436389654}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 5e1235b2e417983469723d36f05de88d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6263204072449159223
 GameObject:
   m_ObjectHideFlags: 0
@@ -6487,6 +6221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524872968648728}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352858808723951
 MeshFilter:
@@ -6668,6 +6403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524873054785691}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352858911900012
 MeshFilter:
@@ -6951,6 +6687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524873054895423}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352858911747272
 MeshFilter:
@@ -7402,6 +7139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524873294957978}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352859152079981
 MeshFilter:
@@ -7851,6 +7589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524873282686199}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352859156323584
 MeshFilter:
@@ -8230,6 +7969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524873721610488}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352859595247887
 MeshFilter:
@@ -8379,6 +8119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524873776024588}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352859666701819
 MeshFilter:
@@ -8694,6 +8435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524873842278631}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352859682623760
 MeshFilter:
@@ -8977,6 +8719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524873851522779}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352859725422380
 MeshFilter:
@@ -9426,6 +9169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524873895358778}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352859752210637
 MeshFilter:
@@ -9520,7 +9264,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8466352860586663483}
-  - {fileID: 4920271981436689990}
   m_Father: {fileID: 8466352860808573702}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9640,6 +9383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524873956032419}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352859829923412
 MeshFilter:
@@ -9921,6 +9665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 8922399539766415546}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352859968048540
 MeshFilter:
@@ -10270,6 +10015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524874155672561}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352860029309446
 MeshFilter:
@@ -10487,6 +10233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524874258617863}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352860132509680
 MeshFilter:
@@ -10898,6 +10645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524874462207577}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352860336099246
 MeshFilter:
@@ -11347,6 +11095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524874488643841}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352860362281206
 MeshFilter:
@@ -11761,6 +11510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524874695168935}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352860568797776
 MeshFilter:
@@ -12044,6 +11794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524874745756230}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352860585831345
 MeshFilter:
@@ -12193,6 +11944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524874759854308}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352860633745683
 MeshFilter:
@@ -12538,6 +12290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 8922399540603197372}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352860742011546
 MeshFilter:
@@ -12752,6 +12505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524874946125227}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352860786461788
 MeshFilter:
@@ -13069,6 +12823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileName: Cannonball
   muzzleTransform: {fileID: 2346524874918370632}
+  smokeEffect: {fileID: 0}
   reloadTime: 3
 --- !u!33 &8466352860809039039
 MeshFilter:
