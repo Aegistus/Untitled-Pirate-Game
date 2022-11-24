@@ -10,9 +10,9 @@ public class ShipHealth : MonoBehaviour
     public UnityEvent OnShipSink;
     public static readonly float waterIncreaseRate = .02f;
 
-    [SerializeField] int maxBottomHealth = 1000;
-    [SerializeField] int maxDeckHealth = 1000;
-    [SerializeField] int maxSailHealth = 1000;
+    [SerializeField] public int maxBottomHealth = 1000;
+    [SerializeField] public int maxDeckHealth = 1000;
+    [SerializeField] public int maxSailHealth = 1000;
 
     public int BottomHealth { get; private set; }
     public int DeckHealth { get; private set; }

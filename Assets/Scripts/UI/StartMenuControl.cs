@@ -9,34 +9,34 @@ public class StartMenuControl : MonoBehaviour
     public GameObject startOverlay;
     public GameObject startInfoOverlay;
 
-    SoundManager sound;
-    int menuSoundID;
-    int leaveMenuSoundID;
+    // SoundManager sound;      //sound is throwing me errors so im throwing it out >:(
+    //int menuSoundID;          //temporarily
+    //int leaveMenuSoundID;
 
     public void Start()
     {
-        sound = SoundManager.Instance;
-        menuSoundID = sound.GetSoundID("Menu_Open");
-        leaveMenuSoundID = sound.GetSoundID("Menu_Close");
+        //sound = SoundManager.Instance;
+        //menuSoundID = sound.GetSoundID("Menu_Open");
+        //leaveMenuSoundID = sound.GetSoundID("Menu_Close");
         startOverlay.SetActive(true);
         startInfoOverlay.SetActive(false);
     }
 
     public void Play() //start game
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void Instructions() //only controls so far
     {
-        sound.PlaySoundGlobal(menuSoundID);
+        //sound.PlaySoundGlobal(menuSoundID);
         startOverlay.SetActive(false);
         startInfoOverlay.SetActive(true);
     }
 
     public void Back() //back to start menu
     {
-        sound.PlaySoundGlobal(leaveMenuSoundID);
+        //sound.PlaySoundGlobal(leaveMenuSoundID);
         startInfoOverlay.SetActive(false);
         startOverlay.SetActive(true);
     }
