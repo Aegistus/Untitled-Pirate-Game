@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 3197805195255726854}
   - component: {fileID: 3863758640220936974}
   - component: {fileID: 2020974921869959321}
+  - component: {fileID: 6998449420275719313}
   m_Layer: 0
   m_Name: AI Ship Large
   m_TagString: Untagged
@@ -222,6 +223,12 @@ MonoBehaviour:
   OnWaterLevelChange:
     m_PersistentCalls:
       m_Calls: []
+  OnShipSink:
+    m_PersistentCalls:
+      m_Calls: []
+  maxBottomHealth: 1000
+  maxDeckHealth: 1000
+  maxSailHealth: 1000
 --- !u!195 &3863758640220936974
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -260,6 +267,18 @@ MonoBehaviour:
   portWeaponsParent: {fileID: 3686478548268524190}
   prowWeaponsParent: {fileID: 8299306636210891284}
   sternWeaponsParent: {fileID: 4462700086346575966}
+--- !u!114 &6998449420275719313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3863758640220936962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 424c8b7f8039fd741a24789319a224cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &455858036339492630
 PrefabInstance:
   m_ObjectHideFlags: 0
