@@ -53,6 +53,13 @@ public class ShipHealth : MonoBehaviour
         OnHealthChange.Invoke();
     }
 
+    public void AddToMaxHealth(int additionalHealth)
+    {
+        maxBottomHealth += additionalHealth;
+        maxDeckHealth += additionalHealth;
+        maxSailHealth += additionalHealth;
+    }
+
     void ClampHealth()
     {
         BottomHealth = Mathf.Clamp(BottomHealth, 0, maxBottomHealth);
