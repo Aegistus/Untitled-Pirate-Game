@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2426661446532430244}
   - component: {fileID: 468924056526163314}
   - component: {fileID: 5880718047099228395}
+  - component: {fileID: 981247186}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -102,9 +103,24 @@ MonoBehaviour:
   OnWaterLevelChange:
     m_PersistentCalls:
       m_Calls: []
-  maxBottomHealth: 1000
-  maxDeckHealth: 1000
-  maxSailHealth: 1000
+  OnShipSink:
+    m_PersistentCalls:
+      m_Calls: []
+  maxBottomHealth: 500
+  maxDeckHealth: 500
+  maxSailHealth: 500
+--- !u!114 &981247186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426661446532430246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 424c8b7f8039fd741a24789319a224cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2539310821110173633
 PrefabInstance:
   m_ObjectHideFlags: 0
