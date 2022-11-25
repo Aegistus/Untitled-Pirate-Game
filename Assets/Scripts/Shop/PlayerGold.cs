@@ -6,7 +6,7 @@ public class PlayerGold : MonoBehaviour
 {
     public int goldAmount = 0;
 
-    public bool trySpendGold(int g)
+    public bool TrySpendGold(int g)
     {
         if (goldAmount >= g)
         {
