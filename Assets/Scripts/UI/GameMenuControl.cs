@@ -7,9 +7,12 @@ using UnityEngine.SceneManagement;
 public class GameMenuControl : MonoBehaviour
 {
     public static bool isPaused = false;
+    public static bool shopping = false;
     public GameObject pauseOverlay;
     public GameObject pauseInfoOverlay;
-    [SerializeField] private float timeSpeed = 0f;   //game speed when paused
+    public GameObject shopOverlay;
+    [SerializeField] private float pauseTime = 0f;   //game speed when paused
+    [SerializeField] private float shopTime = 0f;   //game speed when shopping
 
     SoundManager sound;
     int menuSoundID;
@@ -22,6 +25,7 @@ public class GameMenuControl : MonoBehaviour
         leaveMenuSoundID = sound.GetSoundID("LeaveMenu");
         pauseOverlay.SetActive(false);
         pauseInfoOverlay.SetActive(false);
+        shopOverlay.SetActive(false);
     }
 
     void Update()
@@ -32,9 +36,21 @@ public class GameMenuControl : MonoBehaviour
             {
                 Resume();
             }
-            else
+            else if (!shopping)
             {
                 Pause();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab) )
+        {
+            if (shopping)
+            {
+                Resume();
+            }
+            else if (!isPaused)
+            {
+                Shop();
             }
         }
     }
@@ -43,7 +59,7 @@ public class GameMenuControl : MonoBehaviour
     {
         sound.PlaySoundGlobal(menuSoundID);
         pauseOverlay.SetActive(true);
-        Time.timeScale = timeSpeed;
+        Time.timeScale = pauseTime;
         isPaused = true;
     }
 
@@ -51,35 +67,45 @@ public class GameMenuControl : MonoBehaviour
     {
         sound.PlaySoundGlobal(leaveMenuSoundID);
         pauseOverlay.SetActive(false);
+        shopOverlay.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        shopping = false;
     }
 
     public void Restart() //restart game
     {
         isPaused = false;
         Time.timeScale = 1f;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
     
     public void Quit() //quit to main menu
     {
         isPaused = false;
         Time.timeScale = 1f;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
-    public void Options() //in-detail info screen
+    public void Options() //to in-detail info screen
     {
         sound.PlaySoundGlobal(menuSoundID);
         pauseOverlay.SetActive(false);
         pauseInfoOverlay.SetActive(true);
     }
 
-    public void Return() //in-detail info screen
+    public void Return() //from in-detail info screen
     {
         sound.PlaySoundGlobal(leaveMenuSoundID);
         pauseInfoOverlay.SetActive(false);
         pauseOverlay.SetActive(true);
+    }
+
+    public void Shop()
+    {
+        sound.PlaySoundGlobal(menuSoundID);
+        shopOverlay.SetActive(true);
+        Time.timeScale = shopTime;
+        shopping = true;
     }
 }
