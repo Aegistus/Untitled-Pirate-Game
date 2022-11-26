@@ -10,7 +10,7 @@ public class ReloadTimeUpgrade : Upgrade
         goldCost = 10;
         upgradeValue = .5f;
         upgradeName = "Reload Time Upgrade";
-        description = "Increase cannon reload time by " + upgradeValue + ".";
+        description = "Decrease cannon reload time by " + upgradeValue + ".";
     }
     public override void Apply()
     {

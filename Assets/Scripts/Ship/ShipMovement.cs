@@ -154,4 +154,11 @@ public class ShipMovement : MonoBehaviour
     {
         moveSpeed += speed;
     }
+
+    public void AddToTurnSpeed(int turnSpeed)
+    {
+        anchoredTurnSpeed += turnSpeed;
+        halfSailTurnSpeed += turnSpeed;
+        fullSailTurnSpeed += turnSpeed;
+    }
 }
