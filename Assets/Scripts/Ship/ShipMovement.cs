@@ -150,5 +150,8 @@ public class ShipMovement : MonoBehaviour
     //     Gizmos.color = Color.green;
     //     Gizmos.DrawSphere(transform.position + transform.TransformDirection(currentTurnPivot), 5f);
     // }
-
+    public void AddToMovementSpeed(int speed)
+    {
+        moveSpeed += speed;
+    }
 }

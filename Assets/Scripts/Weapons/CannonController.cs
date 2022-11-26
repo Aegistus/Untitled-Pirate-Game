@@ -53,4 +53,9 @@ public class CannonController : MonoBehaviour, ICannon
         isLoaded = false;
         Reload();
     }
+
+    public void decreaseReloadTime(float time)
+    {
+        reloadTime -= time;
+    }
 }
