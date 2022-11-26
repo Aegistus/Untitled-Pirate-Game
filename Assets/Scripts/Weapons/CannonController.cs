@@ -41,13 +41,15 @@ public class CannonController : MonoBehaviour, ICannon
         isLoaded = true;
     }
 
-    public void Shoot()
+    public void Shoot(float damageModifier)
     {
         if (!isLoaded)
         {
             return;
         }
-        pool.SpawnObjectWithLifetime(projectileID, muzzleTransform.position, muzzleTransform.rotation, 10f);
+        GameObject projectileGO = pool.SpawnObjectWithLifetime(projectileID, muzzleTransform.position, muzzleTransform.rotation, 10f);
+        ProjectileController projectile = projectileGO.GetComponent<ProjectileController>();
+        projectile.SetDamageModifier(damageModifier);
         sound.PlaySoundAtPosition(fireSoundID, transform.position);
         smokeEffect.Play();
         isLoaded = false;

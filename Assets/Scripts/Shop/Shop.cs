@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-    public List<Upgrade> allUpgrades;
+    public List<Upgrade> allUpgrades = new List<Upgrade>();
     [HideInInspector] public Upgrade[] displayedUpgrades = new Upgrade[3];
 
     void Start()

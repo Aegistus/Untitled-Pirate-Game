@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface ICannon
 {
-    void Shoot();
+    void Shoot(float damageModifier);
 
     void Reload();
 }

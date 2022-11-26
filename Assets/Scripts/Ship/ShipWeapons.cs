@@ -10,6 +10,8 @@ public class ShipWeapons : MonoBehaviour
     [SerializeField] Transform prowWeaponsParent;
     [SerializeField] Transform sternWeaponsParent;
 
+    public float ShipDamageModifier { get; private set; } = 1f;
+
     List<ICannon> starboardWeapons;
     List<ICannon> portWeapons;
     List<ICannon> prowWeapons;
@@ -35,8 +37,13 @@ public class ShipWeapons : MonoBehaviour
         {
             for (int i = 0; i < weapons.Count; i++)
             {
-                weapons[i].Shoot();
+                weapons[i].Shoot(ShipDamageModifier);
             }
         }
+    }
+
+    public void AddToDamageModifier(float amount)
+    {
+        ShipDamageModifier += amount;
     }
 }

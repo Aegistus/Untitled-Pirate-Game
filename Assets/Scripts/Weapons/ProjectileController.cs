@@ -30,12 +30,19 @@ public class ProjectileController : MonoBehaviour
         shipSoundID = sound.GetSoundID("Cannonball_Impact_Ship");
     }
 
-    private void OnEnable()
+    public void SetDamageModifier(float damageMod)
+    {
+        damage.bottom = (int)(damage.bottom * damageMod);
+        damage.deck = (int)(damage.deck * damageMod);
+        damage.sails = (int)(damage.sails * damageMod);
+    }
+
+    void OnEnable()
     {
         rig.AddForce(transform.forward * bulletSpeed, ForceMode.VelocityChange);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         ShipHealth s = collision.gameObject.GetComponentInParent<ShipHealth>();
         if (s != null)
