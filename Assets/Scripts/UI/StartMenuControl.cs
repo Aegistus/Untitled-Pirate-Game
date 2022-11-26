@@ -9,7 +9,7 @@ public class StartMenuControl : MonoBehaviour
     public GameObject startOverlay;
     public GameObject startInfoOverlay;
 
-    // SoundManager sound;      //sound is throwing me errors so im throwing it out >:(
+    //SoundManager sound;      //sound is throwing me errors so im throwing it out >:(
     //int menuSoundID;          //temporarily
     //int leaveMenuSoundID;
 
@@ -27,7 +27,7 @@ public class StartMenuControl : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    public void Instructions() //only controls so far
+    public void Info() //only controls so far
     {
         //sound.PlaySoundGlobal(menuSoundID);
         startOverlay.SetActive(false);

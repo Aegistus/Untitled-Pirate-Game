@@ -67,6 +67,7 @@ public class GameMenuControl : MonoBehaviour
     {
         sound.PlaySoundGlobal(leaveMenuSoundID);
         pauseOverlay.SetActive(false);
+        pauseInfoOverlay.SetActive(false);
         shopOverlay.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
@@ -87,14 +88,14 @@ public class GameMenuControl : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void Options() //to in-detail info screen
+    public void Info() //to in-detail info screen
     {
         sound.PlaySoundGlobal(menuSoundID);
         pauseOverlay.SetActive(false);
         pauseInfoOverlay.SetActive(true);
     }
 
-    public void Return() //from in-detail info screen
+    public void Back() //from in-detail info screen
     {
         sound.PlaySoundGlobal(leaveMenuSoundID);
         pauseInfoOverlay.SetActive(false);

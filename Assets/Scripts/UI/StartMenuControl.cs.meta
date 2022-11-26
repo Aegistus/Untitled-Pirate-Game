@@ -3,7 +3,9 @@ guid: b8cfa975fc57edc4bb38e5001cdca976
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - startOverlay: {fileID: 2120610813100942249, guid: 0daecd021b7d04c4596aad5ad127ca74, type: 3}
+  - startInfoOverlay: {fileID: 8721055311180831671, guid: 88c1876dd5044d24dadd3b50b88b47a9, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

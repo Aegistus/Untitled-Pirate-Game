@@ -3,7 +3,10 @@ guid: 41b8c3de03841f7458e29eb5446e31e6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pauseOverlay: {fileID: 2766580624916964004, guid: cd7d14d98b4433e40a8b563aa0c6d9a6, type: 3}
+  - pauseInfoOverlay: {fileID: 5373311156113948319, guid: 1a409db553172b2428b20504c7358208, type: 3}
+  - shopOverlay: {fileID: 6827122861012242864, guid: 9e1b224a38c0393498762fd6ccede338, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
