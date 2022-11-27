@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4630223059735031143}
   - component: {fileID: 1591618163}
   - component: {fileID: 6389884508354572003}
+  - component: {fileID: -6185756423275535167}
   m_Layer: 0
   m_Name: Treasure Chest (Large)
   m_TagString: Untagged
@@ -63,6 +64,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4303093630d950745aebf8a32c64974c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLayer: 3
+--- !u!135 &-6185756423275535167
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4630223059735031140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &7316153519102384281
 GameObject:
   m_ObjectHideFlags: 0
@@ -14754,7 +14769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 478630, guid: 931c64dfd4f2c9247a14476c29f94228, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.990208
+      value: -0.13959993
       objectReference: {fileID: 0}
     - target: {fileID: 478630, guid: 931c64dfd4f2c9247a14476c29f94228, type: 3}
       propertyPath: m_LocalRotation.x
@@ -14762,11 +14777,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 478630, guid: 931c64dfd4f2c9247a14476c29f94228, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.13959993
+      value: -0.990208
       objectReference: {fileID: 0}
     - target: {fileID: 478630, guid: 931c64dfd4f2c9247a14476c29f94228, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 478630, guid: 931c64dfd4f2c9247a14476c29f94228, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

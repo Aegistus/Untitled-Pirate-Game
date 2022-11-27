@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3800288392555570734}
   - component: {fileID: 1451488272}
   - component: {fileID: 5798224919758314799}
+  - component: {fileID: 8833318131948199671}
   m_Layer: 0
   m_Name: Treasure Chest (Small)
   m_TagString: Untagged
@@ -63,6 +64,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4303093630d950745aebf8a32c64974c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerLayer: 3
+--- !u!135 &8833318131948199671
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800288392555570735}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &3800288393409943400
 GameObject:
   m_ObjectHideFlags: 0
@@ -14750,15 +14765,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 452878, guid: 00f0c2cd9e0a8434dab8709c9526a69f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.3522501
+      value: 0.440331
       objectReference: {fileID: 0}
     - target: {fileID: 452878, guid: 00f0c2cd9e0a8434dab8709c9526a69f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 452878, guid: 00f0c2cd9e0a8434dab8709c9526a69f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9359059
+      value: -0.89783555
       objectReference: {fileID: 0}
     - target: {fileID: 452878, guid: 00f0c2cd9e0a8434dab8709c9526a69f, type: 3}
       propertyPath: m_LocalRotation.z

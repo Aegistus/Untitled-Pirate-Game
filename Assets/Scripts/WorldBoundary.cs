@@ -31,20 +31,21 @@ public class WorldBoundary : MonoBehaviour
     {
         if ((transform.position - player.position).sqrMagnitude > boundaryRadiusSquared)
         {
-            playerHealth.Damage(stormDamage);
-            inStorm = true;
+            if (!inStorm)
+            {
+                inStorm = true;
+                StartCoroutine(DamagePlayer());
+                stormVolume.enabled = true;
+            }
         }
         else
         {
-            inStorm = false;    
-        }
-        if (inStorm && !stormVolume.enabled)
-        {
-            stormVolume.enabled = true;
-        }
-        if (!inStorm && stormVolume.enabled)
-        {
-            stormVolume.enabled = false;
+            if (inStorm)
+            {
+                inStorm = false;
+                StopCoroutine(DamagePlayer());
+                stormVolume.enabled = false;
+            }
         }
     }
 
@@ -53,5 +54,14 @@ public class WorldBoundary : MonoBehaviour
         Vector3 point = Random.insideUnitSphere * boundaryRadius;
         point.y = 0;
         return point;
+    }
+
+    IEnumerator DamagePlayer()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            playerHealth.Damage(stormDamage);
+        }
     }
 }

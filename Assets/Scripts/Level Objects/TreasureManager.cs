@@ -35,7 +35,7 @@ public class TreasureManager : MonoBehaviour
 
     void Start()
     {
-        SpawnTreasureMaps();
+        StartCoroutine(SpawnDelay());
     }
 
     void SpawnTreasureMaps()
