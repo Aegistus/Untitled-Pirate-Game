@@ -42776,7 +42776,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -46488,6 +46488,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 470757364}
     m_Modifications:
+    - target: {fileID: 2170357214989067610, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2170357214989101378, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2170357214989122322, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2190382804931946799, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -46552,6 +46564,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5783631945569380087, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
 --- !u!4 &1546999808 stripped
@@ -46588,8 +46604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   green: {fileID: 0}
-  red: {fileID: 0}
   blue: {fileID: 0}
+  red: {fileID: 0}
   status: {fileID: 1546999810}
 --- !u!1001 &1547550483
 PrefabInstance:

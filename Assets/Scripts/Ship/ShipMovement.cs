@@ -99,22 +99,43 @@ public class ShipMovement : MonoBehaviour
         if (state == SailState.ANCHORED)
         {
             shipParts.MainMast.transform.GetChild(0).gameObject.SetActive(false);
+            shipParts.MainMast.transform.GetChild(1).gameObject.SetActive(false);
             shipParts.ForeMast.transform.GetChild(0).gameObject.SetActive(false);
+            shipParts.ForeMast.transform.GetChild(1).gameObject.SetActive(false);
             shipParts.MizzenMast.transform.GetChild(0).gameObject.SetActive(false);
+
+            shipParts.MainMast.transform.GetChild(2).gameObject.SetActive(true);
+            shipParts.ForeMast.transform.GetChild(2).gameObject.SetActive(true);
+            shipParts.MizzenMast.transform.GetChild(1).gameObject.SetActive(true);
+
             return;
         }
         if (state == SailState.HALF_SAIL)
         {
             shipParts.MainMast.transform.GetChild(0).gameObject.SetActive(true);
+            shipParts.MainMast.transform.GetChild(1).gameObject.SetActive(false);
             shipParts.ForeMast.transform.GetChild(0).gameObject.SetActive(false);
+            shipParts.ForeMast.transform.GetChild(1).gameObject.SetActive(false);
             shipParts.MizzenMast.transform.GetChild(0).gameObject.SetActive(false);
+
+            shipParts.MainMast.transform.GetChild(2).gameObject.SetActive(false);
+            shipParts.ForeMast.transform.GetChild(2).gameObject.SetActive(true);
+            shipParts.MizzenMast.transform.GetChild(1).gameObject.SetActive(true);
+
             return;
         }
         if (state == SailState.FULL_SAIL)
         {
             shipParts.MainMast.transform.GetChild(0).gameObject.SetActive(true);
+            shipParts.MainMast.transform.GetChild(1).gameObject.SetActive(true);
             shipParts.ForeMast.transform.GetChild(0).gameObject.SetActive(true);
+            shipParts.ForeMast.transform.GetChild(1).gameObject.SetActive(true);
             shipParts.MizzenMast.transform.GetChild(0).gameObject.SetActive(true);
+
+            shipParts.MainMast.transform.GetChild(2).gameObject.SetActive(false);
+            shipParts.ForeMast.transform.GetChild(2).gameObject.SetActive(false);
+            shipParts.MizzenMast.transform.GetChild(1).gameObject.SetActive(false);
+
             return;
         }
     }
