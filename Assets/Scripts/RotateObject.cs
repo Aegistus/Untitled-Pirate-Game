@@ -12,7 +12,7 @@ public class RotateObject : MonoBehaviour
     {
         if (objectToRotate != null)
         {
-            objectToRotate.Rotate(Vector3.up * rotationSpeed);
+            objectToRotate.Rotate(Vector3.up * rotationSpeed, Space.World);
         }
     }
 }
