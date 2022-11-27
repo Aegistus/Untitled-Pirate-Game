@@ -20,6 +20,10 @@ public class Shop : MonoBehaviour
     {
         for (int i = 0; i < displayedUpgrades.Length; i++)
         {
+            if (allUpgrades.Count == 0)
+            {
+                break;
+            }
             // returns current upgrades to pool of all upgrades
             if (displayedUpgrades[i] != null)
             {

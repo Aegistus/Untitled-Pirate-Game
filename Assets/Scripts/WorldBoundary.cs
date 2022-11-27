@@ -47,4 +47,11 @@ public class WorldBoundary : MonoBehaviour
             stormVolume.enabled = false;
         }
     }
+
+    public Vector3 GetRandomPointInBounds()
+    {
+        Vector3 point = Random.insideUnitSphere * boundaryRadius;
+        point.y = 0;
+        return point;
+    }
 }
