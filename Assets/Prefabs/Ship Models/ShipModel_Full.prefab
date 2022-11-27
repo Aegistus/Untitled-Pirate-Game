@@ -5989,6 +5989,7 @@ GameObject:
   - component: {fileID: 7951601004055965338}
   - component: {fileID: 268475323694257624}
   - component: {fileID: 8322343287693273398}
+  - component: {fileID: 6555526800062110269}
   m_Layer: 0
   m_Name: ShipModel_Full
   m_TagString: Untagged
@@ -6075,7 +6076,7 @@ MeshCollider:
   m_GameObject: {fileID: 8660992917107441399}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -6136,6 +6137,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &6555526800062110269
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8660992917107441399}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 4.311781
+  m_Height: 30.763046
+  m_Direction: 2
+  m_Center: {x: 0, y: 4, z: -0.00018310547}
 --- !u!1001 &7060639700282341183
 PrefabInstance:
   m_ObjectHideFlags: 0

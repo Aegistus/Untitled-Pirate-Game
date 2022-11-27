@@ -672,6 +672,7 @@ GameObject:
   - component: {fileID: 3973162908797377675}
   - component: {fileID: 4018803200517123077}
   - component: {fileID: 4969694547637781791}
+  - component: {fileID: 8031174199490282522}
   m_Layer: 0
   m_Name: Enemy_Large
   m_TagString: Untagged
@@ -765,7 +766,7 @@ MeshCollider:
   m_GameObject: {fileID: 3973162908795345559}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -790,6 +791,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &8031174199490282522
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3973162908795345559}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 4.4796143
+  m_Height: 28.65179
+  m_Direction: 2
+  m_Center: {x: 0, y: 5, z: -2.080381}
 --- !u!1 &6263204072449159223
 GameObject:
   m_ObjectHideFlags: 0

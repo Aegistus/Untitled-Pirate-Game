@@ -566,6 +566,7 @@ GameObject:
   - component: {fileID: 5842706439870636674}
   - component: {fileID: 5842706439872054070}
   - component: {fileID: 5905168037794746670}
+  - component: {fileID: 2027539523641802497}
   m_Layer: 0
   m_Name: Enemy_Small_2
   m_TagString: Untagged
@@ -651,11 +652,25 @@ MeshCollider:
   m_GameObject: {fileID: 5842706439869615086}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 60178b8b289271c44bc9dab35c7a851a, type: 3}
+--- !u!136 &2027539523641802497
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842706439869615086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.5989732
+  m_Height: 13.730339
+  m_Direction: 2
+  m_Center: {x: 0, y: 1.5249866, z: 0.32699713}
 --- !u!1 &5842706439869760314
 GameObject:
   m_ObjectHideFlags: 0
