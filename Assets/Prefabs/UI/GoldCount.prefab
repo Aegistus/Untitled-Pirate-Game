@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7906973357998462595}
-  - component: {fileID: 2177843529320762762}
+  - component: {fileID: 1373032501430201324}
   m_Layer: 5
   m_Name: GoldCount
   m_TagString: Untagged
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342745381207735440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.062261, y: 46.911713, z: 60.491524}
+  m_LocalPosition: {x: 11.062261, y: 46.911713, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2177843529320762762
+--- !u!114 &1373032501430201324
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,12 +43,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 342745381207735440}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7479fa2bc5d40f64b8f109552560bf64, type: 3}
+  m_Script: {fileID: 11500000, guid: 791962961b5187a48ba8323ccffee1ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingGold: 0
   goldText: {fileID: 3224661919361832667}
-  goldAmount: 0
+  current: {fileID: 0}
 --- !u!1 &2117489569666122173
 GameObject:
   m_ObjectHideFlags: 0

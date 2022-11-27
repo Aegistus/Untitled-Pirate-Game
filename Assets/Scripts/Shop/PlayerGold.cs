@@ -1,18 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class PlayerGold : MonoBehaviour
 {
-    private int goldAmount;
-    [SerializeField] int startingGold = 0;
-    [SerializeField] TMP_Text goldText;
+    public int goldAmount;
 
     void Start()
     {
-        goldAmount = startingGold;
-        goldText.text = goldAmount.ToString();
+        goldAmount = 0;
     }
     
     public bool TrySpendGold(int g)
@@ -20,7 +16,6 @@ public class PlayerGold : MonoBehaviour
         if (goldAmount >= g)
         {
             goldAmount -= g;
-            goldText.text = goldAmount.ToString();
             return true;
         }
         return false;
@@ -29,6 +24,5 @@ public class PlayerGold : MonoBehaviour
     public void AddGold(int g)
     {
         goldAmount += g;
-        goldText.text = goldAmount.ToString();
     }
 }
