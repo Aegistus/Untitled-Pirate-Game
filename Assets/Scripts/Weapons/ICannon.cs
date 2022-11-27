@@ -6,5 +6,5 @@ public interface ICannon
 {
     void Shoot(float damageModifier);
 
-    void Reload();
+    void Reload(float delayModifier);
 }

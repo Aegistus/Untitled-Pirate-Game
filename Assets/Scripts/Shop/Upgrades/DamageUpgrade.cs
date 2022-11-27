@@ -21,5 +21,6 @@ public class DamageUpgrade : Upgrade
     {
         goldCost += 20;
         upgradeValue += .1f;
+        description = "Increase damage by " + upgradeValue + ".";
     }
 }

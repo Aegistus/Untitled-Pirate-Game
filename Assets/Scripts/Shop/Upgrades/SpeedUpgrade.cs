@@ -13,13 +13,14 @@ public class SpeedUpgrade : Upgrade
     }
     public override void Apply()
     {
-        ShipMovement speed = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipMovement>();
-        speed.AddToMovementSpeed((int)upgradeValue);
+        ShipMovement shipMovement = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipMovement>();
+        shipMovement.AddToMovementSpeed(upgradeValue);
     }
 
     public override void IncreaseUpgradeLevel()
     {
         goldCost += 20;
         upgradeValue += 1;
+        description = "Increase ship speed by " + upgradeValue + ".";
     }
 }

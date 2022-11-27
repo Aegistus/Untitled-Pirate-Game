@@ -8,14 +8,14 @@ public class ReloadTimeUpgrade : Upgrade
     public ReloadTimeUpgrade()
     {
         goldCost = 10;
-        upgradeValue = .5f;
+        upgradeValue = .1f;
         upgradeName = "Reload Time Upgrade";
         description = "Decrease cannon reload time by " + upgradeValue + ".";
     }
     public override void Apply()
     {
-        CannonController time = GameObject.FindObjectOfType<PlayerController>().GetComponent<CannonController>();
-        time.decreaseReloadTime(upgradeValue);
+        ShipWeapons weapons = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipWeapons>();
+        weapons.SubtractReloadTimeModifier(upgradeValue);
     }
 
     public override void IncreaseUpgradeLevel()

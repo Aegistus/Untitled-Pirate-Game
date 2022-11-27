@@ -227,14 +227,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2190382804931946799, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2190382804931946799, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2426661446532430245, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -282,18 +274,6 @@ PrefabInstance:
     - target: {fileID: 2426661446532430246, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5880718047099228395, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
-      propertyPath: maxDeckHealth
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5880718047099228395, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
-      propertyPath: maxSailHealth
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5880718047099228395, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}
-      propertyPath: maxBottomHealth
-      value: 10000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1de7c229c898ea3458033baa41e5e6d3, type: 3}

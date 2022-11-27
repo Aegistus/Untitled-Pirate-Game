@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class TreasureChest : MonoBehaviour
 {
+    [SerializeField] int goldReward;
     [SerializeField] int playerLayer;
 
     int collectSoundID;
@@ -19,6 +20,7 @@ public class TreasureChest : MonoBehaviour
         if (other.gameObject.layer == playerLayer)
         {
             SoundManager.Instance.PlaySoundGlobal(collectSoundID);
+            FindObjectOfType<PlayerGold>().AddGold(goldReward);
             Destroy(gameObject);
         }
     }

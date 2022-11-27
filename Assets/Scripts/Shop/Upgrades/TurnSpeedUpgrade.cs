@@ -13,13 +13,14 @@ public class TurnSpeedUpgrade : Upgrade
     }
     public override void Apply()
     {
-        ShipMovement damage = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipMovement>();
-        damage.AddToTurnSpeed((int)upgradeValue);
+        ShipMovement shipMovement = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipMovement>();
+        shipMovement.AddToTurnSpeed(upgradeValue);
     }
 
     public override void IncreaseUpgradeLevel()
     {
         goldCost += 20;
         upgradeValue += 10f;
+        description = "Increase turn speed by " + upgradeValue + ".";
     }
 }
