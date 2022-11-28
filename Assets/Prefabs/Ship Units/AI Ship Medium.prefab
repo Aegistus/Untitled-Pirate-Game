@@ -74249,6 +74249,7 @@ GameObject:
   - component: {fileID: 8034518815642217299}
   - component: {fileID: 6769726152202872815}
   - component: {fileID: 8034518815642217301}
+  - component: {fileID: 2443615726128222846}
   m_Layer: 0
   m_Name: Enemy_Medium
   m_TagString: Untagged
@@ -74379,6 +74380,26 @@ MonoBehaviour:
   sternCannonsParent: {fileID: 6290474730911386393}
   prowCannonsParent: {fileID: 6290474730043922438}
   ramParent: {fileID: 0}
+--- !u!95 &2443615726128222846
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6290474730487883073}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a694dea319ec47f6a9d48dac7aadd92, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6290474730495219274
 GameObject:
   m_ObjectHideFlags: 0
