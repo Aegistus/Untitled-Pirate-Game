@@ -17,6 +17,7 @@ public class EnemySpawner : MonoBehaviour
         GameObject enemy = Instantiate(enemyPrefabs[index], transform.position, transform.rotation);
         spawnedHealth = enemy.GetComponent<ShipHealth>();
         spawnedHealth.OnShipSink.AddListener(SetSpawnedAsDead);
+        SpawnedEnemyKilled = false;
     }
 
     public void SetSpawnedAsDead()

@@ -5,6 +5,8 @@ using UnityEngine;
 public class AttackState : AIState
 {
     ShipWeapons weapons;
+    float timer;
+    float attackDelay = 5f;
 
     public AttackState(GameObject gameObject, AIController controller) : base(gameObject, controller)
     {
@@ -15,18 +17,25 @@ public class AttackState : AIState
     public override void BeforeExecution()
     {
         Debug.Log("Attacking");
+        timer = 0;
     }
 
     public override void DuringExecution(float deltaTime)
     {
-        if (controller.portSensor.HasTarget)
+        if (timer >= attackDelay)
         {
-            weapons.FireWeaponsOnSide(ShipDirection.Port);
+            if (controller.portSensor.HasTarget)
+            {
+                weapons.FireWeaponsOnSide(ShipDirection.Port);
+            }
+            if (controller.starboardSensor.HasTarget)
+            {
+                weapons.FireWeaponsOnSide(ShipDirection.Starboard);
+            }
+            timer = 0;
         }
-        if (controller.starboardSensor.HasTarget)
-        {
-            weapons.FireWeaponsOnSide(ShipDirection.Starboard);
-        }
+        timer += deltaTime;
+
         controller.SetDestination(transform.forward);
     }
 

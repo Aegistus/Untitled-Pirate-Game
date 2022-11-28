@@ -6,10 +6,12 @@ public class ChaseState : AIState
 {
     float broadsideDistance = 50f;
     ShipWeapons weapons;
+    float minimumTime = 5f;
+    float timer = 0f;
 
     public ChaseState(GameObject gameObject, AIController controller) : base(gameObject, controller)
     {
-        transitionsTo.Add(new Transition(typeof(WanderState), () => fov.visibleTargets.Count == 0));
+        transitionsTo.Add(new Transition(typeof(WanderState), () => fov.visibleTargets.Count == 0 && timer >= minimumTime));
         transitionsTo.Add(new Transition(typeof(AttackState), () => controller.starboardSensor.HasTarget || controller.portSensor.HasTarget));
         weapons = gameObject.GetComponent<ShipWeapons>();
     }
@@ -17,6 +19,7 @@ public class ChaseState : AIState
     public override void BeforeExecution()
     {
         Debug.Log("Chasing");
+        timer = 0f;
     }
 
     public override void DuringExecution(float deltaTime)
@@ -26,6 +29,7 @@ public class ChaseState : AIState
             controller.SetDestination(PickTargetSide(fov.visibleTargets[0]));
         }
         controller.TurnTowardsPath();
+        timer += deltaTime;
     }
 
     public override void AfterExecution()

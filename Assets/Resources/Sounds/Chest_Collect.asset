@@ -16,7 +16,7 @@ MonoBehaviour:
   audioVariants:
   - {fileID: 8300000, guid: b52fa4111e1321d4393512b391f77751, type: 3}
   - {fileID: 8300000, guid: 0b53dcf8d131ae64297149751f736165, type: 3}
-  volume: 1
+  volume: 0.2
   volumeVariance: 0.1
   pitch: 1
   pitchVariance: 0.1
