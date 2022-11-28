@@ -1991,6 +1991,7 @@ GameObject:
   - component: {fileID: 3128577213125802067}
   - component: {fileID: 3128577213124726425}
   - component: {fileID: 3138920603525828179}
+  - component: {fileID: 2211324232926341800}
   m_Layer: 0
   m_Name: Enemy_Medium
   m_TagString: Untagged
@@ -2080,11 +2081,25 @@ MeshCollider:
   m_GameObject: {fileID: 3128577213122730863}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 34f1a28e97fa40b48845cac26b338e8c, type: 3}
+--- !u!136 &2211324232926341800
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128577213122730863}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.3511443
+  m_Height: 23.588264
+  m_Direction: 2
+  m_Center: {x: 0, y: 2.2425532, z: 0.020244598}
 --- !u!1 &3128577213122735953
 GameObject:
   m_ObjectHideFlags: 0
