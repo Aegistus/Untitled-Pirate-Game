@@ -46,7 +46,7 @@ public class ShipMovement : MonoBehaviour
         currentTurnSpeed = anchoredTurnSpeed;
         UpdatePivot();
         UpdateTurnSpeed();
-        UpdateSails();
+        UpdateSails(state);
     }
 
     void Update()
@@ -65,7 +65,7 @@ public class ShipMovement : MonoBehaviour
             UpdateTurnSpeed();
             UpdatePivot();
             sound.PlaySoundAtPosition(unfurlSoundID, transform.position);
-            UpdateSails();
+            UpdateSails(state);
         }
     }
 
@@ -78,7 +78,7 @@ public class ShipMovement : MonoBehaviour
             UpdateTurnSpeed();
             UpdatePivot();
             sound.PlaySoundAtPosition(furlSoundID, transform.position);
-            UpdateSails();
+            UpdateSails(state);
         }
     }
 
@@ -94,7 +94,7 @@ public class ShipMovement : MonoBehaviour
         transform.RotateAround(transform.position + transform.TransformDirection(currentTurnPivot), Vector3.up, rotationInput * currentTurnSpeed * Time.deltaTime);
     }
 
-    void UpdateSails()
+    public void UpdateSails(SailState state)
     {
         if (state == SailState.ANCHORED)
         {

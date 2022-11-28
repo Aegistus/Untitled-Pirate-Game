@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
         directionAngles[0] = Vector3.SignedAngle(transform.forward, mouseDir, Vector3.up); // prow
         directionAngles[1] = Vector3.SignedAngle(-transform.forward, mouseDir, Vector3.up); // stern
         directionAngles[2] = Vector3.SignedAngle(transform.right, mouseDir, Vector3.up); // starboard
-        directionAngles[3] =  Vector3.SignedAngle(-transform.right, mouseDir, Vector3.up); // port
+        directionAngles[3] = Vector3.SignedAngle(-transform.right, mouseDir, Vector3.up); // port
         // make all angles positive
         for (int i = 0; i < directionAngles.Length; i++)
         {

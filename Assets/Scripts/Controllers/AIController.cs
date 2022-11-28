@@ -34,6 +34,7 @@ public class AIController : MonoBehaviour
         if (movement.CurrentSailState == ShipMovement.SailState.ANCHORED)
         {
             movement.IncreaseSpeed();
+            movement.UpdateSails(ShipMovement.SailState.FULL_SAIL);     //gives appearance of full mast at half
         }
     }
 
