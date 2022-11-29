@@ -22,7 +22,7 @@ public class ShipHealth : MonoBehaviour
     public float MaxWaterLevel { get; private set; } = 1000f;
 
     public bool HasSunk { get; private set; } = false;
- 
+
     void Awake()
     {
         BottomHealth = maxBottomHealth;

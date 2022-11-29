@@ -36,8 +36,12 @@ public class ShipMovement : MonoBehaviour
     int unfurlSoundID;
 
     SailState state;
+
+    ShipHealth status;
+
     void Start()
     {
+        status = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipHealth>();
         shipParts = GetComponentInChildren<ShipParts>();
         sound = SoundManager.Instance;
         furlSoundID = sound.GetSoundID(furlSound);
@@ -51,9 +55,17 @@ public class ShipMovement : MonoBehaviour
 
     void Update()
     {
-        Move();
-        currentTurnSpeed = Mathf.Lerp(currentTurnSpeed, targetTurnSpeed, turnAcceleration * Time.deltaTime);
-        currentTurnPivot = Vector3.Lerp(currentTurnPivot, targetTurnPivot, acceleration * Time.deltaTime);
+        if (!status.HasSunk)
+        {
+            Move();
+            currentTurnSpeed = Mathf.Lerp(currentTurnSpeed, targetTurnSpeed, turnAcceleration * Time.deltaTime);
+            currentTurnPivot = Vector3.Lerp(currentTurnPivot, targetTurnPivot, acceleration * Time.deltaTime);
+        }
+        else
+        {
+            currentSpeed = 0f;
+        }
+
     }
 
     public void IncreaseSpeed()
@@ -98,9 +110,10 @@ public class ShipMovement : MonoBehaviour
     {
         if (state == SailState.ANCHORED)
         {
-            SetChildrenActive(shipParts.MainMast, false);
-            SetChildrenActive(shipParts.ForeMast, false);
-            SetChildrenActive(shipParts.MizzenMast, false);
+            SetChildrenActive(shipParts.ForeMast, shipParts.ForeFurled, false);
+            SetChildrenActive(shipParts.MainMast, shipParts.MainFurled, false);
+            SetChildrenActive(shipParts.MizzenMast, shipParts.MizzenFurled, false);
+
             // shipParts.MainMast.transform.GetChild(0).gameObject.SetActive(false);
             // shipParts.MainMast.transform.GetChild(1).gameObject.SetActive(false);
             // shipParts.ForeMast.transform.GetChild(0).gameObject.SetActive(false);
@@ -115,9 +128,9 @@ public class ShipMovement : MonoBehaviour
         }
         if (state == SailState.HALF_SAIL)
         {
-            SetChildrenActive(shipParts.MainMast, true);
-            SetChildrenActive(shipParts.ForeMast, false);
-            SetChildrenActive(shipParts.MizzenMast, false);
+            SetChildrenActive(shipParts.ForeMast, shipParts.ForeFurled, false);
+            SetChildrenActive(shipParts.MainMast, shipParts.MainFurled, true);
+            SetChildrenActive(shipParts.MizzenMast, shipParts.MizzenFurled, false);
             // shipParts.MainMast.transform.GetChild(0).gameObject.SetActive(true);
             // shipParts.MainMast.transform.GetChild(1).gameObject.SetActive(false);
             // shipParts.ForeMast.transform.GetChild(0).gameObject.SetActive(false);
@@ -132,9 +145,9 @@ public class ShipMovement : MonoBehaviour
         }
         if (state == SailState.FULL_SAIL)
         {
-            SetChildrenActive(shipParts.MainMast, true);
-            SetChildrenActive(shipParts.ForeMast, true);
-            SetChildrenActive(shipParts.MizzenMast, true);
+            SetChildrenActive(shipParts.ForeMast, shipParts.ForeFurled, true);
+            SetChildrenActive(shipParts.MainMast, shipParts.MainFurled, true);
+            SetChildrenActive(shipParts.MizzenMast, shipParts.MizzenFurled, true);
             // shipParts.MainMast.transform.GetChild(0).gameObject.SetActive(true);
             // shipParts.MainMast.transform.GetChild(1).gameObject.SetActive(true);
             // shipParts.ForeMast.transform.GetChild(0).gameObject.SetActive(true);
@@ -192,11 +205,15 @@ public class ShipMovement : MonoBehaviour
         fullSailTurnSpeed += turnSpeed;
     }
 
-    void SetChildrenActive(GameObject go, bool active)
+    void SetChildrenActive(GameObject sail, GameObject furl, bool active)
     {
-        for (int i = 0; i < go.transform.childCount; i++)
+        for (int i = 0; i < sail.transform.childCount; i++)
         {
-            go.transform.GetChild(i).gameObject.SetActive(active);
+            sail.transform.GetChild(i).gameObject.SetActive(active);
+        }
+        for (int i = 0; i < furl.transform.childCount; i++)
+        {
+            furl.transform.GetChild(i).gameObject.SetActive(!active);
         }
     }
 }

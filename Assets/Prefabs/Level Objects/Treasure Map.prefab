@@ -14658,6 +14658,7 @@ GameObject:
   - component: {fileID: 4601689361616401270}
   - component: {fileID: 3089182001867139773}
   - component: {fileID: 7415952695803904321}
+  - component: {fileID: 1624910038263919602}
   m_Layer: 0
   m_Name: Treasure Map
   m_TagString: Untagged
@@ -14697,7 +14698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToRotate: {fileID: 4601689360529733909}
-  rotationSpeed: 1
+  rotationSpeed: 0.5
 --- !u!114 &3089182001867139773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14724,6 +14725,26 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 7
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1624910038263919602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4601689361616401268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095961e152841e447b6016d010d590c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 0.6, g: 0.4862745, b: 0.2, a: 0}
+  overrideDefaultColor: 0
+  outlineWidth: 5
+  overrideDefaultWidth: 0
+  outlineMode: 0
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &4601689360530076125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14765,19 +14786,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.73248065
+      value: 0.20497563
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.3268176
+      value: -0.085648924
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5420098
+      value: 0.8878555
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.25077456
+      value: 0.40294147
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14798,3 +14819,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
   m_PrefabInstance: {fileID: 4601689360530076125}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4601689360529922783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 158466, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
+  m_PrefabInstance: {fileID: 4601689360530076125}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &687938553610329783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4601689360529922783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095961e152841e447b6016d010d590c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 0.6, g: 0.4862745, b: 0.2, a: 0}
+  overrideDefaultColor: 1
+  outlineWidth: 5
+  overrideDefaultWidth: 0
+  outlineMode: 0
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
