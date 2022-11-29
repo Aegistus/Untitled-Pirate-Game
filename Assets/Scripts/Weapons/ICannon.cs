@@ -4,6 +4,8 @@ using UnityEngine;
 
 public interface ICannon
 {
+    public bool IsLoaded { get; }
+
     void Shoot(float damageModifier);
 
     void Reload(float delayModifier);

@@ -38,9 +38,11 @@ public class ShipWeapons : MonoBehaviour
         {
             for (int i = 0; i < weapons.Count; i++)
             {
-                print("shoot");
-                weapons[i].Shoot(ShipDamageModifier);
-                weapons[i].Reload(ReloadTimeModifier);
+                if (weapons[i].IsLoaded)
+                {
+                    weapons[i].Shoot(ShipDamageModifier);
+                    weapons[i].Reload(ReloadTimeModifier);
+                }
             }
         }
     }

@@ -9,7 +9,7 @@ public class CannonController : MonoBehaviour, ICannon
     [SerializeField] ParticleSystem smokeEffect;
     [SerializeField] float baseReloadTime = 3f;
 
-    bool isLoaded = true;
+    public bool IsLoaded { get; private set; } = true;
     float reloadTimeActual;
 
     int projectileID;
@@ -34,6 +34,7 @@ public class CannonController : MonoBehaviour, ICannon
     public void Reload(float delayModifier)
     {
         reloadTimeActual = baseReloadTime * delayModifier;
+        IsLoaded = false;
         StartCoroutine(ReloadCoroutine());
     }
 
@@ -41,12 +42,12 @@ public class CannonController : MonoBehaviour, ICannon
     {
         yield return new WaitForSeconds(reloadTimeActual);
         sound.PlaySoundAtPosition(reloadSoundID, transform.position);
-        isLoaded = true;
+        IsLoaded = true;
     }
 
     public void Shoot(float damageModifier)
     {
-        if (!isLoaded)
+        if (!IsLoaded)
         {
             return;
         }
@@ -55,6 +56,6 @@ public class CannonController : MonoBehaviour, ICannon
         projectile.SetDamageModifier(damageModifier);
         sound.PlaySoundAtPosition(fireSoundID, transform.position);
         smokeEffect.Play();
-        isLoaded = false;
+        IsLoaded = false;
     }
 }
