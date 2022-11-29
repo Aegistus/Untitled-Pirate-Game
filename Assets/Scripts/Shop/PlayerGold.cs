@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class PlayerGold : MonoBehaviour
 {
-    public int goldAmount;
+    public int goldAmount = 5;
 
     void Start()
     {
-        goldAmount = 0;
     }
-    
+
     public bool TrySpendGold(int g)
     {
         if (goldAmount >= g)

@@ -6,11 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     ShipMovement movement;
     ShipWeapons weapons;
+    ShipHealth status;
     CameraController cameraController;
     ShipDirection aimDirection = ShipDirection.Prow;
 
     void Awake()
     {
+        status = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipHealth>();
         movement = GetComponent<ShipMovement>();
         weapons = GetComponent<ShipWeapons>();
         cameraController = FindObjectOfType<CameraController>();
@@ -18,30 +20,33 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        aimDirection = DeterminePlayerAimDirection();
-        if (Input.GetKeyDown(KeyCode.W))
+        if (!status.HasSunk)
         {
-            movement.IncreaseSpeed();
+            aimDirection = DeterminePlayerAimDirection();
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                movement.IncreaseSpeed();
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                movement.DecreaseSpeed();
+            }
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                cameraController.FollowCursor(true);
+            }
+            if (Input.GetKeyUp(KeyCode.LeftControl))
+            {
+                cameraController.FollowCursor(false);
+            }
+            float rotation = Input.GetAxis("Horizontal");
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                weapons.FireWeaponsOnSide(aimDirection);
+            }
+            movement.Turn(rotation);
+            cameraController.Zoom(-Input.mouseScrollDelta.y);
         }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            movement.DecreaseSpeed();
-        }
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            cameraController.FollowCursor(true);
-        }
-        if (Input.GetKeyUp(KeyCode.LeftControl))
-        {
-            cameraController.FollowCursor(false);
-        }
-        float rotation = Input.GetAxis("Horizontal");
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            weapons.FireWeaponsOnSide(aimDirection);
-        }
-        movement.Turn(rotation);
-        cameraController.Zoom(-Input.mouseScrollDelta.y);
     }
 
     RaycastHit rayHit;

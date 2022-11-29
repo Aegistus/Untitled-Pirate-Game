@@ -5,10 +5,13 @@ using System.Linq;
 
 public class ShipParts : MonoBehaviour
 {
-    [SerializeField] GameObject mainMast;
     [SerializeField] GameObject foreMast;
+    [SerializeField] GameObject foreFurled;
+    [SerializeField] GameObject mainMast;
+    [SerializeField] GameObject mainFurled;
     [SerializeField] GameObject mizzenMast;
-    
+    [SerializeField] GameObject mizzenFurled;
+
     [SerializeField] Transform starboardBroadsideParent;
     [SerializeField] Transform portBroadsideParent;
 
@@ -17,9 +20,12 @@ public class ShipParts : MonoBehaviour
 
     [SerializeField] Transform ramParent;
 
-    public GameObject MainMast => mainMast;
     public GameObject ForeMast => foreMast;
+    public GameObject ForeFurled => foreFurled;
+    public GameObject MainMast => mainMast;
+    public GameObject MainFurled => mainFurled;
     public GameObject MizzenMast => mizzenMast;
+    public GameObject MizzenFurled => mizzenFurled;
 
     Transform[] starboardBroadside;
     Transform[] portBroadside;

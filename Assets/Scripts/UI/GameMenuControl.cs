@@ -8,9 +8,11 @@ public class GameMenuControl : MonoBehaviour
 {
     public static bool isPaused = false;
     public static bool shopping = false;
+    public static bool notDead = true;
     public GameObject pauseOverlay;
     public GameObject pauseInfoOverlay;
     public GameObject shopOverlay;
+    public GameObject lossOverlay;
     [SerializeField] private float pauseTime = 0f;   //game speed when paused
     [SerializeField] private float shopTime = 0f;   //game speed when shopping
 
@@ -26,31 +28,35 @@ public class GameMenuControl : MonoBehaviour
         pauseOverlay.SetActive(false);
         pauseInfoOverlay.SetActive(false);
         shopOverlay.SetActive(false);
+        lossOverlay.SetActive(false);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) )
+        if(notDead)
         {
-            if (isPaused)
+            if (Input.GetKeyDown(KeyCode.Escape) )
             {
-                Resume();
+                if (isPaused)
+                {
+                    Resume();
+                }
+                else if (!shopping)
+                {
+                    Pause();
+                }
             }
-            else if (!shopping)
-            {
-                Pause();
-            }
-        }
 
-        if (Input.GetKeyDown(KeyCode.Tab) )
-        {
-            if (shopping)
+            if (Input.GetKeyDown(KeyCode.Tab) )
             {
-                Resume();
-            }
-            else if (!isPaused)
-            {
-                Shop();
+                if (shopping)
+                {
+                    Resume();
+                }
+                else if (!isPaused)
+                {
+                    Shop();
+                }
             }
         }
     }
@@ -80,7 +86,7 @@ public class GameMenuControl : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(1);
     }
-    
+
     public void Quit() //quit to main menu
     {
         isPaused = false;
@@ -108,5 +114,16 @@ public class GameMenuControl : MonoBehaviour
         shopOverlay.SetActive(true);
         Time.timeScale = shopTime;
         shopping = true;
+    }
+
+    public void GameOver()
+    {
+        notDead = false;
+        //sound.PlaySoundGlobal(gameOverID);
+        pauseOverlay.SetActive(false);
+        pauseInfoOverlay.SetActive(false);
+        shopOverlay.SetActive(false);
+        lossOverlay.SetActive(true);
+        Time.timeScale = 0.75f;
     }
 }
