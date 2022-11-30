@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 3863758640220936974}
   - component: {fileID: 2020974921869959321}
   - component: {fileID: 6998449420275719313}
+  - component: {fileID: 6237736072755096242}
   m_Layer: 8
   m_Name: AI Ship Large
   m_TagString: Untagged
@@ -279,6 +280,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424c8b7f8039fd741a24789319a224cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6237736072755096242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3863758640220936962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72291b433406663438bfa072911609ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldGiven: 10
 --- !u!1001 &455858036339492630
 PrefabInstance:
   m_ObjectHideFlags: 0

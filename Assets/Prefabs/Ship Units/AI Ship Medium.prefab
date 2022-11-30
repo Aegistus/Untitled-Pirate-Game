@@ -459,6 +459,7 @@ GameObject:
   - component: {fileID: 6993089709915522335}
   - component: {fileID: 5231309142144810632}
   - component: {fileID: 3858980846989066880}
+  - component: {fileID: 2525868797815949668}
   m_Layer: 8
   m_Name: AI Ship Medium
   m_TagString: Untagged
@@ -614,6 +615,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424c8b7f8039fd741a24789319a224cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2525868797815949668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6993089709915522323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72291b433406663438bfa072911609ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldGiven: 10
 --- !u!1001 &630912457465080661
 PrefabInstance:
   m_ObjectHideFlags: 0
