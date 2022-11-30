@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 6ad7bee776f4e65458984d7b63a98b74, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: e68232f1e02cae442948af19e73aa2ac, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: bf18b7193a7f3e0498269822feff95a2, type: 2}
 --- !u!196 &5
 NavMeshSettings:
   serializedVersion: 2
@@ -1661,6 +1661,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3488903339610133144, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+      propertyPath: maxDeckHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488903339610133144, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+      propertyPath: maxBottomHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488903339610133144, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
       propertyPath: OnShipSink.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2308,7 +2316,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.6698113, g: 0.62827563, b: 0.5149964, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -4626,31 +4634,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: -94.990746
       objectReference: {fileID: 0}
     - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 75
+      value: 20.330524
       objectReference: {fileID: 0}
     - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15
+      value: -1.5433849
       objectReference: {fileID: 0}
     - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8390504
+      value: 0.73617
       objectReference: {fileID: 0}
     - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5424311
+      value: 0.6767901
       objectReference: {fileID: 0}
     - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.035260826
+      value: -0.0022088063
       objectReference: {fileID: 0}
     - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.022795552
+      value: 0.0020308148
       objectReference: {fileID: 0}
     - target: {fileID: 7633918091361757878, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: target
@@ -6138,6 +6146,14 @@ PrefabInstance:
     - target: {fileID: 2996342878210886300, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488903339610133144, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+      propertyPath: maxDeckHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3488903339610133144, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
+      propertyPath: maxBottomHealth
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3488903339610133144, guid: 23d8dd31dcebd3c49a76f6ff525a8bce, type: 3}
       propertyPath: OnShipSink.m_PersistentCalls.m_Calls.Array.size
