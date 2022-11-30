@@ -22,5 +22,6 @@ public class TurnSpeedUpgrade : Upgrade
         goldCost += 20;
         upgradeValue += 10f;
         description = "Increase turn speed by " + upgradeValue + ".";
+        timesPurchased++;
     }
 }

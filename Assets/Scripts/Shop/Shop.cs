@@ -5,6 +5,8 @@ using UnityEngine;
 public class Shop : MonoBehaviour
 {
     public List<Upgrade> allUpgrades = new List<Upgrade>();
+    // the max number of times certain upgrades can be purchased
+    public int upgradePurchaseLimit = 3;
     [HideInInspector] public Upgrade[] displayedUpgrades = new Upgrade[3];
 
     void Start()
@@ -30,9 +32,14 @@ public class Shop : MonoBehaviour
                 allUpgrades.Add(displayedUpgrades[i]);
                 displayedUpgrades[i] = null;
             }
-            Upgrade u = allUpgrades[Random.Range(0, allUpgrades.Count)];
-            displayedUpgrades[i] = u;
-            allUpgrades.Remove(u);
+            Upgrade upgrade = allUpgrades[Random.Range(0, allUpgrades.Count)];
+            // displays only if the upgrade hasn't been purchased more than the limit
+            if (upgrade.timesPurchased < upgradePurchaseLimit)
+            {
+                displayedUpgrades[i] = upgrade;
+                allUpgrades.Remove(upgrade);
+            }
+
         }
     }
 }
