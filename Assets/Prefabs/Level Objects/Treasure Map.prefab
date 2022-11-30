@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4601689360348958483}
   - component: {fileID: 4601689360348958485}
   - component: {fileID: 4601689360348958482}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FX_Pickup_Glow_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4893,7 +4893,7 @@ GameObject:
   - component: {fileID: 4601689360668445345}
   - component: {fileID: 4601689360668445347}
   - component: {fileID: 4601689360668445344}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FX_Pickup_Beams_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9775,7 +9775,7 @@ GameObject:
   - component: {fileID: 4601689360784093508}
   - component: {fileID: 4601689360784093510}
   - component: {fileID: 4601689360784093511}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: FX_Pickup_Sparkles_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14737,8 +14737,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 095961e152841e447b6016d010d590c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineColor: {r: 0.6, g: 0.4862745, b: 0.2, a: 0}
-  overrideDefaultColor: 0
+  outlineColor: {r: 1, g: 0.5176471, b: 0, a: 1}
+  overrideDefaultColor: 1
   outlineWidth: 5
   overrideDefaultWidth: 0
   outlineMode: 0
@@ -14786,19 +14786,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.20497563
+      value: -0.9028872
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.085648924
+      value: 0.40714654
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.8878555
+      value: -0.12288002
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.40294147
+      value: -0.06266461
       objectReference: {fileID: 0}
     - target: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14812,6 +14812,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2352106, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5bcd3942a0f042c4daca7e738a6606f6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
 --- !u!4 &4601689360529733909 stripped
@@ -14819,28 +14823,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 477384, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
   m_PrefabInstance: {fileID: 4601689360530076125}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4601689360529922783 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 158466, guid: 65050b5e8d57ef9489b31d45cd793531, type: 3}
-  m_PrefabInstance: {fileID: 4601689360530076125}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &687938553610329783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4601689360529922783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 095961e152841e447b6016d010d590c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 0.6, g: 0.4862745, b: 0.2, a: 0}
-  overrideDefaultColor: 1
-  outlineWidth: 5
-  overrideDefaultWidth: 0
-  outlineMode: 0
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
