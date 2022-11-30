@@ -22,5 +22,6 @@ public class SpeedUpgrade : Upgrade
         goldCost += 20;
         upgradeValue += 1;
         description = "Increase ship speed by " + upgradeValue + ".";
+        timesPurchased++;
     }
 }

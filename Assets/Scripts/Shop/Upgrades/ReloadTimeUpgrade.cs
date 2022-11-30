@@ -21,6 +21,7 @@ public class ReloadTimeUpgrade : Upgrade
     public override void IncreaseUpgradeLevel()
     {
         goldCost += 20;
+        timesPurchased++;
     }
 
 }

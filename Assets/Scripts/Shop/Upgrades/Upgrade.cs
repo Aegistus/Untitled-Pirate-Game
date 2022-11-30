@@ -12,6 +12,8 @@ public abstract class Upgrade
     public string upgradeName;
     // description for UI
     public string description;
+    // the number of times the upgrade has been purchased from the shop.
+    public int timesPurchased;
     
     // Applies the upgrade to the player's ship
     public abstract void Apply();
