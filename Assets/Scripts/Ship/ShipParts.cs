@@ -38,8 +38,14 @@ public class ShipParts : MonoBehaviour
         starboardBroadside = starboardBroadsideParent.GetComponentsInChildren<Transform>();
         portBroadside = portBroadsideParent.GetComponentsInChildren<Transform>();
 
-        prowCannons = prowCannonsParent.GetComponentsInChildren<Transform>();
-        sternCannons = sternCannonsParent.GetComponentsInChildren<Transform>();
+        if (prowCannons != null)
+        {
+            prowCannons = prowCannonsParent.GetComponentsInChildren<Transform>();
+        }
+        if (sternCannons != null)
+        {
+            sternCannons = sternCannonsParent.GetComponentsInChildren<Transform>();
+        }
     }
 
 }

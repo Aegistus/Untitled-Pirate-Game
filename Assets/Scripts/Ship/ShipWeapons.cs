@@ -21,10 +21,16 @@ public class ShipWeapons : MonoBehaviour
 
     void Awake()
     {
-        starboardWeapons = starboardWeaponsParent.GetComponentsInChildren<ICannon>().ToList();
-        portWeapons = portWeaponsParent.GetComponentsInChildren<ICannon>().ToList();
-        prowWeapons = prowWeaponsParent.GetComponentsInChildren<ICannon>().ToList();
-        sternWeapons = sternWeaponsParent.GetComponentsInChildren<ICannon>().ToList();
+        starboardWeapons = starboardWeaponsParent?.GetComponentsInChildren<ICannon>().ToList();
+        portWeapons = portWeaponsParent?.GetComponentsInChildren<ICannon>().ToList();
+        if (prowWeaponsParent != null)
+        {
+            prowWeapons = prowWeaponsParent?.GetComponentsInChildren<ICannon>().ToList();
+        }
+        if (sternWeaponsParent != null)
+        {
+            sternWeapons = sternWeaponsParent?.GetComponentsInChildren<ICannon>().ToList();
+        }
         directionToWeapons.Add(ShipDirection.Starboard, starboardWeapons);
         directionToWeapons.Add(ShipDirection.Port, portWeapons);
         directionToWeapons.Add(ShipDirection.Prow, prowWeapons);
