@@ -7,15 +7,17 @@ public class GoldUI : MonoBehaviour
 {
     public TMP_Text goldText;
 
-    public PlayerGold current;
+    PlayerGold playerGold;
 
     void Start()
     {
-        goldText.text = current.goldAmount.ToString();
+        playerGold = FindObjectOfType<PlayerGold>();
+        UpdateGold(playerGold.goldAmount);
+        playerGold.OnGoldChange.AddListener(UpdateGold);
     }
 
-    void Update()
+    void UpdateGold(int gold)
     {
-        goldText.text = current.goldAmount.ToString();
+        goldText.text = gold.ToString();
     }
 }

@@ -8,12 +8,22 @@ public class HealthBar : MonoBehaviour
     public Image green;         //health
     public Image blue;          //water level
     public Image red;           //sails
-    public ShipHealth status;
+    ShipHealth health;
 
-    void Update()
+    void Start()
     {
-        green.fillAmount = ((float)status.BottomHealth / (float)status.maxBottomHealth + (float)status.DeckHealth / (float)status.maxDeckHealth) / 2.0f;
-        blue.fillAmount = (float)status.WaterLevel / (float)status.MaxWaterLevel;
-        red.fillAmount = 1.0f - (float)status.SailHealth / (float)status.maxSailHealth;
+        if (health == null)
+        {
+            health = FindObjectOfType<PlayerController>().GetComponent<ShipHealth>();
+        }
+        UpdateHealthbar();
+        health.OnHealthChange.AddListener(UpdateHealthbar);
+    }
+
+    void UpdateHealthbar()
+    {
+        green.fillAmount = ((float)health.BottomHealth / (float)health.maxBottomHealth + (float)health.DeckHealth / (float)health.maxDeckHealth) / 2.0f;
+        blue.fillAmount = (float)health.WaterLevel / (float)health.MaxWaterLevel;
+        red.fillAmount = 1.0f - (float)health.SailHealth / (float)health.maxSailHealth;
     }
 }

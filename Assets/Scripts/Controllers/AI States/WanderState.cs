@@ -41,7 +41,7 @@ public class WanderState : AIState
     {
         float x = Random.Range(-wanderDistance, wanderDistance);
         float z = Random.Range(-wanderDistance, wanderDistance);
-        Vector3 destination = new Vector3(x, 0, z);
+        Vector3 destination = new Vector3(transform.position.x + x, 0, transform.position.z + z);
         controller.SetDestination(destination);
     }
 }
