@@ -77,15 +77,14 @@ public class ShipHealth : MonoBehaviour
             if (maxBottomHealth - BottomHealth != 0)
             {
                 WaterLevel += (maxBottomHealth - BottomHealth) * waterIncreaseRate;
-                OnWaterLevelChange.Invoke();
             }
             // if bottom is repaired/at max health
             else if (WaterLevel > 0)
             {
                 WaterLevel -= waterDecreaseRate;
                 WaterLevel = Mathf.Clamp(WaterLevel, 0, MaxWaterLevel);
-                OnWaterLevelChange.Invoke();
             }
+            OnWaterLevelChange.Invoke();
             if (WaterLevel >= MaxWaterLevel)
             {
                 Sink();

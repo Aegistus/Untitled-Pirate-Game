@@ -133,6 +133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7479fa2bc5d40f64b8f109552560bf64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnGoldChange:
+    m_PersistentCalls:
+      m_Calls: []
   goldAmount: 0
 --- !u!1001 &2539310821110173633
 PrefabInstance:
@@ -1696,6 +1699,14 @@ PrefabInstance:
     - target: {fileID: 7654590748894163611, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951601004055965338, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951601004055965338, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8660992917107161241, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
       propertyPath: m_RootOrder

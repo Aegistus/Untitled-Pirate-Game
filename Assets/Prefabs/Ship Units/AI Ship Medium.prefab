@@ -836,6 +836,26 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3128577213122730863, guid: bf2d8973c56024ed995e10a152544172, type: 3}
   m_PrefabInstance: {fileID: 630912457465080661}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &96294856095435902
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2570293078340202554}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a694dea319ec47f6a9d48dac7aadd92, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &6888651739964336339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,26 +899,22 @@ MonoBehaviour:
   sternCannonsParent: {fileID: 0}
   prowCannonsParent: {fileID: 0}
   ramParent: {fileID: 0}
---- !u!95 &96294856095435902
-Animator:
-  serializedVersion: 4
+--- !u!54 &2699933600983728816
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2570293078340202554}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4a694dea319ec47f6a9d48dac7aadd92, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!4 &2570293078374201123 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3128577213628193910, guid: bf2d8973c56024ed995e10a152544172, type: 3}
