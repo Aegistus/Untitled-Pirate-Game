@@ -23,8 +23,8 @@ public class GameMenuControl : MonoBehaviour
     public void Start()
     {
         sound = SoundManager.Instance;
-        menuSoundID = sound.GetSoundID("Menu");
-        leaveMenuSoundID = sound.GetSoundID("LeaveMenu");
+        menuSoundID = sound.GetSoundID("Menu_Open");
+        leaveMenuSoundID = sound.GetSoundID("Menu_Close");
         pauseOverlay.SetActive(false);
         pauseInfoOverlay.SetActive(false);
         shopOverlay.SetActive(false);
