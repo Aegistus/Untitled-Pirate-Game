@@ -8,6 +8,7 @@ public class WorldBoundary : MonoBehaviour
 {
     [SerializeField] float boundaryRadius;
     [SerializeField] DamageValue stormDamage;
+    [SerializeField] AudioSource audioSource;
 
     float boundaryRadiusSquared;
     Transform player;
@@ -31,20 +32,27 @@ public class WorldBoundary : MonoBehaviour
     {
         if ((transform.position - player.position).sqrMagnitude > boundaryRadiusSquared)
         {
+            Debug.Log("First: " + inStorm);
             if (!inStorm)
             {
+                Debug.Log("In storm");
                 inStorm = true;
                 StartCoroutine(DamagePlayer());
                 stormVolume.enabled = true;
+                SoundManager.FadeInCaller(audioSource, 0.01f, .5f);
             }
         }
         else
         {
+            Debug.Log("Second: " + inStorm);
             if (inStorm)
             {
+                Debug.Log("No longer in storm");
                 inStorm = false;
                 StopCoroutine(DamagePlayer());
                 stormVolume.enabled = false;
+                SoundManager.FadeOutCaller(audioSource, 0.01f);
+
             }
         }
     }
@@ -58,7 +66,7 @@ public class WorldBoundary : MonoBehaviour
 
     IEnumerator DamagePlayer()
     {
-        while (true)
+        while (inStorm)
         {
             yield return new WaitForSeconds(1);
             playerHealth.Damage(stormDamage);
