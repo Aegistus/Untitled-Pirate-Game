@@ -6,7 +6,7 @@ public class AttackState : AIState
 {
     ShipWeapons weapons;
     float timer;
-    float attackDelay = 5f;
+    float attackDelay = .5f;
 
     public AttackState(GameObject gameObject, AIController controller) : base(gameObject, controller)
     {

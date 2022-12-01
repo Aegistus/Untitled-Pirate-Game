@@ -29,6 +29,8 @@ public class GameMenuControl : MonoBehaviour
         pauseInfoOverlay.SetActive(false);
         shopOverlay.SetActive(false);
         lossOverlay.SetActive(false);
+        ShipHealth playerHealth = FindObjectOfType<PlayerController>().GetComponent<ShipHealth>();
+        playerHealth.OnShipSink.AddListener(GameOver);
     }
 
     void Update()

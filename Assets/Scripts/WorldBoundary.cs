@@ -32,7 +32,6 @@ public class WorldBoundary : MonoBehaviour
     {
         if ((transform.position - player.position).sqrMagnitude > boundaryRadiusSquared)
         {
-            Debug.Log("First: " + inStorm);
             if (!inStorm)
             {
                 Debug.Log("In storm");
@@ -44,7 +43,6 @@ public class WorldBoundary : MonoBehaviour
         }
         else
         {
-            Debug.Log("Second: " + inStorm);
             if (inStorm)
             {
                 Debug.Log("No longer in storm");
