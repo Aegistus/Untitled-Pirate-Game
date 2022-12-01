@@ -9,6 +9,7 @@ public class ShipHealth : MonoBehaviour
     public UnityEvent OnWaterLevelChange;
     public UnityEvent OnShipSink;
     public static readonly float waterIncreaseRate = .02f;
+    public static readonly float waterDecreaseRate = .4f;
 
     [SerializeField] public int maxBottomHealth = 1000;
     [SerializeField] public int maxDeckHealth = 1000;
@@ -72,8 +73,19 @@ public class ShipHealth : MonoBehaviour
         while (!HasSunk)
         {
             yield return new WaitForSeconds(1f);
-            WaterLevel += (maxBottomHealth - BottomHealth) * waterIncreaseRate;
-            OnWaterLevelChange.Invoke();
+            // if bottom has taken damage
+            if (maxBottomHealth - BottomHealth != 0)
+            {
+                WaterLevel += (maxBottomHealth - BottomHealth) * waterIncreaseRate;
+                OnWaterLevelChange.Invoke();
+            }
+            // if bottom is repaired/at max health
+            else if (WaterLevel > 0)
+            {
+                WaterLevel -= waterDecreaseRate;
+                WaterLevel = Mathf.Clamp(WaterLevel, 0, MaxWaterLevel);
+                OnWaterLevelChange.Invoke();
+            }
             if (WaterLevel >= MaxWaterLevel)
             {
                 Sink();
