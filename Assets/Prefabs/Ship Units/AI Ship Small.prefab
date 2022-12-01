@@ -637,7 +637,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2602385406965864923, guid: d03b2056726684706af5d5e8a4f9fdb7, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5033363940835121238, guid: d03b2056726684706af5d5e8a4f9fdb7, type: 3}
       propertyPath: m_Layer
@@ -969,7 +969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7397980569378845432, guid: d03b2056726684706af5d5e8a4f9fdb7, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7397981707071261860, guid: d03b2056726684706af5d5e8a4f9fdb7, type: 3}
       propertyPath: m_IsTrigger

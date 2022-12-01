@@ -2020,7 +2020,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 68cc9bc1692dabf4596c958ffe06eae6, type: 2}
     - target: {fileID: 8706791432811610521, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8713004736548279478, guid: 40d09b88f3c8b4db58381e1a5f25ef93, type: 3}
       propertyPath: m_Layer

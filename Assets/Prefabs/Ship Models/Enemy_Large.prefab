@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4304661061041076040}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 705750554468651380}
   - component: {fileID: 705750554467812008}
   - component: {fileID: 705750554466446724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 705750554468668036}
   - component: {fileID: 705750554467767076}
   - component: {fileID: 705750554466396956}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 705750554468649216}
   - component: {fileID: 705750554467786054}
   - component: {fileID: 705750554466401196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 705750554468579334}
   - component: {fileID: 705750554467825416}
   - component: {fileID: 705750554466394108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 705750554468670952}
   - component: {fileID: 705750554467792964}
   - component: {fileID: 705750554466756670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 705750554468617442}
   - component: {fileID: 705750554467808082}
   - component: {fileID: 705750554466768216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8922399540603197372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -569,7 +569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8922399539766415546}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -600,7 +600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9195550307011609097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Starboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -634,7 +634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3853542846051214728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Port
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7858415219520281942}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ForeMast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -707,7 +707,7 @@ GameObject:
   - component: {fileID: 4018803200517123077}
   - component: {fileID: 4969694547637781791}
   - component: {fileID: 8031174199490282522}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy_Large
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9064170504548334473}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainMastFurled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -871,7 +871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524874462207577}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -902,7 +902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524874258617863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -933,7 +933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524874155672561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -964,7 +964,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524873956032419}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -995,7 +995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524874918370632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1026,7 +1026,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524874946125227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1057,7 +1057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524874759854308}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1088,7 +1088,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524874695168935}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1119,7 +1119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524874745756230}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1150,7 +1150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524874488643841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1181,7 +1181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524873282686199}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1212,7 +1212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524873294957978}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1243,7 +1243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524873054785691}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1274,7 +1274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524873054895423}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1305,7 +1305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524872968648728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1336,7 +1336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524873842278631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1367,7 +1367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524873851522779}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1398,7 +1398,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524873895358778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1429,7 +1429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524873721610488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1460,7 +1460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346524873776024588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1493,7 +1493,7 @@ GameObject:
   - component: {fileID: 6562780682792184419}
   - component: {fileID: 6562780682792961671}
   - component: {fileID: 6562780682794142231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrel_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1576,7 +1576,7 @@ GameObject:
   - component: {fileID: 6562780682792198021}
   - component: {fileID: 6562780682792883841}
   - component: {fileID: 6562780682793914923}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_Cannonballs_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1659,7 +1659,7 @@ GameObject:
   - component: {fileID: 6562780682792183279}
   - component: {fileID: 6562780682792961879}
   - component: {fileID: 6562780682793946107}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrel_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1742,7 +1742,7 @@ GameObject:
   - component: {fileID: 6562780682792179797}
   - component: {fileID: 6562780682792926975}
   - component: {fileID: 6562780682794172149}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1825,7 +1825,7 @@ GameObject:
   - component: {fileID: 6562780682792192799}
   - component: {fileID: 6562780682792884361}
   - component: {fileID: 6562780682793924323}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1908,7 +1908,7 @@ GameObject:
   - component: {fileID: 6562780682792105563}
   - component: {fileID: 6562780682792881839}
   - component: {fileID: 6562780682794149155}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1997,7 +1997,7 @@ GameObject:
   - component: {fileID: 6562780682792169767}
   - component: {fileID: 6562780682792949903}
   - component: {fileID: 6562780682793954439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2080,7 +2080,7 @@ GameObject:
   - component: {fileID: 6562780682792116797}
   - component: {fileID: 6562780682792948885}
   - component: {fileID: 6562780682794133381}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2163,7 +2163,7 @@ GameObject:
   - component: {fileID: 6562780682792100923}
   - component: {fileID: 6562780682792948857}
   - component: {fileID: 6562780682793943987}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Mast_SailUp_02_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2251,7 +2251,7 @@ GameObject:
   - component: {fileID: 6626567268956613707}
   - component: {fileID: 6626420476828093559}
   - component: {fileID: 6626895713557572897}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Mast_02_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2404,7 +2404,7 @@ GameObject:
   - component: {fileID: 6562780682792132707}
   - component: {fileID: 6562780682792903435}
   - component: {fileID: 6562780682793923777}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2492,7 +2492,7 @@ GameObject:
   - component: {fileID: 6626976471512983841}
   - component: {fileID: 6624818098443601389}
   - component: {fileID: 6626488351884061247}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Mast_03_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2645,7 +2645,7 @@ GameObject:
   - component: {fileID: 6562780682792127443}
   - component: {fileID: 6562780682792928073}
   - component: {fileID: 6562780682794139941}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrel_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2728,7 +2728,7 @@ GameObject:
   - component: {fileID: 6562780682792126669}
   - component: {fileID: 6562780682792878237}
   - component: {fileID: 6562780682793922147}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2811,7 +2811,7 @@ GameObject:
   - component: {fileID: 6562780682792123645}
   - component: {fileID: 6562780682792933609}
   - component: {fileID: 6562780682793953305}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2894,7 +2894,7 @@ GameObject:
   - component: {fileID: 6562780682792186985}
   - component: {fileID: 6562780682792928331}
   - component: {fileID: 6562780682793931429}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrel_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2977,7 +2977,7 @@ GameObject:
   - component: {fileID: 6562780682792161915}
   - component: {fileID: 6562780682792948855}
   - component: {fileID: 6562780682793944953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Cargo_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3060,7 +3060,7 @@ GameObject:
   - component: {fileID: 6562780682792171947}
   - component: {fileID: 6562780682792956529}
   - component: {fileID: 6562780682794162035}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrel_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3143,7 +3143,7 @@ GameObject:
   - component: {fileID: 6562780682792166117}
   - component: {fileID: 6562780682792921373}
   - component: {fileID: 6562780682794143371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_ShipWheel_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3226,7 +3226,7 @@ GameObject:
   - component: {fileID: 6562780682792101999}
   - component: {fileID: 6562780682792949099}
   - component: {fileID: 6562780682794141911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrel_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3309,7 +3309,7 @@ GameObject:
   - component: {fileID: 6562780682792138177}
   - component: {fileID: 6562780682792968773}
   - component: {fileID: 6562780682793910583}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Cargo_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3392,7 +3392,7 @@ GameObject:
   - component: {fileID: 6562780682792171161}
   - component: {fileID: 6562780682792944665}
   - component: {fileID: 6562780682794146621}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrel_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3475,7 +3475,7 @@ GameObject:
   - component: {fileID: 6562780682792171343}
   - component: {fileID: 6562780682792960425}
   - component: {fileID: 6562780682793948429}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_CannonBalls_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3558,7 +3558,7 @@ GameObject:
   - component: {fileID: 6562780682792136805}
   - component: {fileID: 6562780682792894315}
   - component: {fileID: 6562780682794145695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3641,7 +3641,7 @@ GameObject:
   - component: {fileID: 6562780682792167009}
   - component: {fileID: 6562780682792920917}
   - component: {fileID: 6562780682793957609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrels_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3724,7 +3724,7 @@ GameObject:
   - component: {fileID: 6562780682792145517}
   - component: {fileID: 6562780682792925549}
   - component: {fileID: 6562780682794144231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3807,7 +3807,7 @@ GameObject:
   - component: {fileID: 6562780682792108573}
   - component: {fileID: 6562780682792917707}
   - component: {fileID: 6562780682794151629}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Cargo_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3890,7 +3890,7 @@ GameObject:
   - component: {fileID: 6562780682792160527}
   - component: {fileID: 6562780682792933211}
   - component: {fileID: 6562780682793967855}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrels_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3973,7 +3973,7 @@ GameObject:
   - component: {fileID: 6562780682792158337}
   - component: {fileID: 6562780682792947069}
   - component: {fileID: 6562780682794170671}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrel_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4056,7 +4056,7 @@ GameObject:
   - component: {fileID: 6562780682792110193}
   - component: {fileID: 6562780682792878339}
   - component: {fileID: 6562780682794167695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4144,7 +4144,7 @@ GameObject:
   - component: {fileID: 6626289505985215765}
   - component: {fileID: 6624896357334779435}
   - component: {fileID: 6624816711995505931}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Mast_01_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4297,7 +4297,7 @@ GameObject:
   - component: {fileID: 6562780682792162699}
   - component: {fileID: 6562780682792923175}
   - component: {fileID: 6562780682793918557}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4380,7 +4380,7 @@ GameObject:
   - component: {fileID: 6562780682792155037}
   - component: {fileID: 6562780682792934729}
   - component: {fileID: 6562780682793966661}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrel_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4461,7 +4461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6562780682792155143}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Attachments
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4533,7 +4533,7 @@ GameObject:
   - component: {fileID: 6562780682792174721}
   - component: {fileID: 6562780682792876849}
   - component: {fileID: 6562780682793934139}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4616,7 +4616,7 @@ GameObject:
   - component: {fileID: 6562780682792119601}
   - component: {fileID: 6562780682792893165}
   - component: {fileID: 6562780682793947531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Mast_SailUp_03_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4699,7 +4699,7 @@ GameObject:
   - component: {fileID: 6562780682792147223}
   - component: {fileID: 6562780682792880843}
   - component: {fileID: 6562780682794132967}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4782,7 +4782,7 @@ GameObject:
   - component: {fileID: 6562780682792122929}
   - component: {fileID: 6562780682792874057}
   - component: {fileID: 6562780682794134531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Mast_SailUp_04_05_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4865,7 +4865,7 @@ GameObject:
   - component: {fileID: 6562780682792119905}
   - component: {fileID: 6562780682792942885}
   - component: {fileID: 6562780682793957461}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_CannonBalls_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4948,7 +4948,7 @@ GameObject:
   - component: {fileID: 6562780682792103645}
   - component: {fileID: 6562780682792893177}
   - component: {fileID: 6562780682793952867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Sails_01_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5031,7 +5031,7 @@ GameObject:
   - component: {fileID: 6562780682792188007}
   - component: {fileID: 6562780682792952381}
   - component: {fileID: 6562780682794139115}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5114,7 +5114,7 @@ GameObject:
   - component: {fileID: 6562780682792140421}
   - component: {fileID: 6562780682792903379}
   - component: {fileID: 6562780682794168683}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Sails_05_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5197,7 +5197,7 @@ GameObject:
   - component: {fileID: 6562780682792138505}
   - component: {fileID: 6562780682792931707}
   - component: {fileID: 6562780682793914739}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Sails_03_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5280,7 +5280,7 @@ GameObject:
   - component: {fileID: 6562780682792197611}
   - component: {fileID: 6562780682792962895}
   - component: {fileID: 6562780682794145591}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5363,7 +5363,7 @@ GameObject:
   - component: {fileID: 6562780682792159555}
   - component: {fileID: 6562780682792882309}
   - component: {fileID: 6562780682793969357}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_Cannonballs_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5446,7 +5446,7 @@ GameObject:
   - component: {fileID: 6562780682792144225}
   - component: {fileID: 6562780682792959081}
   - component: {fileID: 6562780682793966483}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Sails_02_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5529,7 +5529,7 @@ GameObject:
   - component: {fileID: 6562780682792142161}
   - component: {fileID: 6562780682792926007}
   - component: {fileID: 6562780682794141745}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5612,7 +5612,7 @@ GameObject:
   - component: {fileID: 6562780682792101561}
   - component: {fileID: 6562780682792924249}
   - component: {fileID: 6562780682793967553}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Mast_SailUp_01_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5695,7 +5695,7 @@ GameObject:
   - component: {fileID: 6562780682792165045}
   - component: {fileID: 6562780682792905439}
   - component: {fileID: 6562780682794163995}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Barrel_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5778,7 +5778,7 @@ GameObject:
   - component: {fileID: 6562780682792164071}
   - component: {fileID: 6562780682792901447}
   - component: {fileID: 6562780682794148735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5861,7 +5861,7 @@ GameObject:
   - component: {fileID: 6562780682792147801}
   - component: {fileID: 6562780682792914577}
   - component: {fileID: 6562780682793929223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_Cannonballs_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5944,7 +5944,7 @@ GameObject:
   - component: {fileID: 6562780682792144765}
   - component: {fileID: 6562780682792945013}
   - component: {fileID: 6562780682793918025}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Warship_01_Sails_04_Pirate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6027,7 +6027,7 @@ GameObject:
   - component: {fileID: 6562780682792141155}
   - component: {fileID: 6562780682792916261}
   - component: {fileID: 6562780682794152911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6108,7 +6108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8322562439531656593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainMast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6142,7 +6142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5423089217757147504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MizzenMastFurled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6174,7 +6174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2287363175027126554}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ForeMastFurled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6209,7 +6209,7 @@ GameObject:
   - component: {fileID: 8466352858808049121}
   - component: {fileID: 8466352858808821705}
   - component: {fileID: 8466352858809772465}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6292,7 +6292,7 @@ GameObject:
   - component: {fileID: 8466352858808022785}
   - component: {fileID: 8466352858808760803}
   - component: {fileID: 8466352858809780613}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6377,7 +6377,7 @@ GameObject:
   - component: {fileID: 8466352858808723951}
   - component: {fileID: 8466352858810252713}
   - component: {fileID: 8474558538358353439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6491,7 +6491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352858861910559}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6523,7 +6523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352858884472282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside(4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6559,7 +6559,7 @@ GameObject:
   - component: {fileID: 8466352858911900012}
   - component: {fileID: 8466352858912642346}
   - component: {fileID: 8474558538272523932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6675,7 +6675,7 @@ GameObject:
   - component: {fileID: 8466352858914740422}
   - component: {fileID: 8466352858911843054}
   - component: {fileID: 8466352858912795798}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6758,7 +6758,7 @@ GameObject:
   - component: {fileID: 8466352858914714150}
   - component: {fileID: 8466352858911784132}
   - component: {fileID: 8466352858912804002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6843,7 +6843,7 @@ GameObject:
   - component: {fileID: 8466352858911747272}
   - component: {fileID: 8466352858912749710}
   - component: {fileID: 8474558538272631608}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6959,7 +6959,7 @@ GameObject:
   - component: {fileID: 8466352858914873218}
   - component: {fileID: 8466352858911871328}
   - component: {fileID: 8466352858912973062}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7042,7 +7042,7 @@ GameObject:
   - component: {fileID: 8466352858914846050}
   - component: {fileID: 8466352858911936330}
   - component: {fileID: 8466352858912948530}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7123,7 +7123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352858917642850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7155,7 +7155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352858972375765}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside_Starboard_Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7191,7 +7191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859044964705}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7223,7 +7223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859059228663}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside_Port_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7259,7 +7259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859059852908}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7295,7 +7295,7 @@ GameObject:
   - component: {fileID: 8466352859152079981}
   - component: {fileID: 8466352859150551083}
   - component: {fileID: 8474558538569292701}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7411,7 +7411,7 @@ GameObject:
   - component: {fileID: 8466352859152820323}
   - component: {fileID: 8466352859152044619}
   - component: {fileID: 8466352859151031347}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7494,7 +7494,7 @@ GameObject:
   - component: {fileID: 8466352859152777859}
   - component: {fileID: 8466352859152108641}
   - component: {fileID: 8466352859151023111}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7577,7 +7577,7 @@ GameObject:
   - component: {fileID: 8466352859155654926}
   - component: {fileID: 8466352859156419366}
   - component: {fileID: 8466352859157372254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7660,7 +7660,7 @@ GameObject:
   - component: {fileID: 8466352859155612654}
   - component: {fileID: 8466352859156352268}
   - component: {fileID: 8466352859157396842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7745,7 +7745,7 @@ GameObject:
   - component: {fileID: 8466352859156323584}
   - component: {fileID: 8466352859157842246}
   - component: {fileID: 8474558538546567920}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7859,7 +7859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859258624504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7891,7 +7891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859326449483}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7923,7 +7923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859400796477}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7957,7 +7957,7 @@ GameObject:
   - component: {fileID: 8466352859598606305}
   - component: {fileID: 8466352859595211011}
   - component: {fileID: 8466352859596321125}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8040,7 +8040,7 @@ GameObject:
   - component: {fileID: 8466352859598578945}
   - component: {fileID: 8466352859595153193}
   - component: {fileID: 8466352859596296529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8125,7 +8125,7 @@ GameObject:
   - component: {fileID: 8466352859595247887}
   - component: {fileID: 8466352859596637513}
   - component: {fileID: 8474558538108884735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8239,7 +8239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859623013729}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8275,7 +8275,7 @@ GameObject:
   - component: {fileID: 8466352859666701819}
   - component: {fileID: 8466352859667794365}
   - component: {fileID: 8474558538054212107}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8391,7 +8391,7 @@ GameObject:
   - component: {fileID: 8466352859670020885}
   - component: {fileID: 8466352859666664951}
   - component: {fileID: 8466352859667742097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8474,7 +8474,7 @@ GameObject:
   - component: {fileID: 8466352859669998069}
   - component: {fileID: 8466352859666600925}
   - component: {fileID: 8466352859667750309}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8555,7 +8555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859670073003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8591,7 +8591,7 @@ GameObject:
   - component: {fileID: 8466352859682623760}
   - component: {fileID: 8466352859681228118}
   - component: {fileID: 8474558538021902048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8707,7 +8707,7 @@ GameObject:
   - component: {fileID: 8466352859679264766}
   - component: {fileID: 8466352859682586908}
   - component: {fileID: 8466352859681567098}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8790,7 +8790,7 @@ GameObject:
   - component: {fileID: 8466352859679237406}
   - component: {fileID: 8466352859682660150}
   - component: {fileID: 8466352859681575246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8875,7 +8875,7 @@ GameObject:
   - component: {fileID: 8466352859725422380}
   - component: {fileID: 8466352859726515050}
   - component: {fileID: 8474558537978714332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8991,7 +8991,7 @@ GameObject:
   - component: {fileID: 8466352859728740802}
   - component: {fileID: 8466352859725385504}
   - component: {fileID: 8466352859726462790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9074,7 +9074,7 @@ GameObject:
   - component: {fileID: 8466352859728718626}
   - component: {fileID: 8466352859725320458}
   - component: {fileID: 8466352859726471026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9157,7 +9157,7 @@ GameObject:
   - component: {fileID: 8466352859750989347}
   - component: {fileID: 8466352859752181953}
   - component: {fileID: 8466352859753267367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9240,7 +9240,7 @@ GameObject:
   - component: {fileID: 8466352859750945987}
   - component: {fileID: 8466352859752247019}
   - component: {fileID: 8466352859753259155}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9325,7 +9325,7 @@ GameObject:
   - component: {fileID: 8466352859752210637}
   - component: {fileID: 8466352859753215115}
   - component: {fileID: 8474558537968052029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9439,7 +9439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859764008122}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9471,7 +9471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859771280566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9503,7 +9503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859808157483}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9539,7 +9539,7 @@ GameObject:
   - component: {fileID: 8466352859829923412}
   - component: {fileID: 8466352859830630930}
   - component: {fileID: 8474558539484113316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9655,7 +9655,7 @@ GameObject:
   - component: {fileID: 8466352859832883802}
   - component: {fileID: 8466352859830018162}
   - component: {fileID: 8466352859830971914}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9738,7 +9738,7 @@ GameObject:
   - component: {fileID: 8466352859832856762}
   - component: {fileID: 8466352859829960280}
   - component: {fileID: 8466352859830947390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9823,7 +9823,7 @@ GameObject:
   - component: {fileID: 8466352859968048540}
   - component: {fileID: 8466352859969326000}
   - component: {fileID: 8474177863969608090}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9935,7 +9935,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859986741351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannons_Starboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9969,7 +9969,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352859990396723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10003,7 +10003,7 @@ GameObject:
   - component: {fileID: 8466352860028570856}
   - component: {fileID: 8466352860029272586}
   - component: {fileID: 8466352860030349932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10086,7 +10086,7 @@ GameObject:
   - component: {fileID: 8466352860028544520}
   - component: {fileID: 8466352860029344800}
   - component: {fileID: 8466352860030358104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10171,7 +10171,7 @@ GameObject:
   - component: {fileID: 8466352860029309446}
   - component: {fileID: 8466352860030797376}
   - component: {fileID: 8474558539285304822}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10285,7 +10285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860095947910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10317,7 +10317,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860108120921}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10349,7 +10349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860134252711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside_Port_Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10389,7 +10389,7 @@ GameObject:
   - component: {fileID: 8466352860132509680}
   - component: {fileID: 8466352860133118902}
   - component: {fileID: 8474558539719622656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10505,7 +10505,7 @@ GameObject:
   - component: {fileID: 8466352860135348510}
   - component: {fileID: 8466352860132481020}
   - component: {fileID: 8466352860133582746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10588,7 +10588,7 @@ GameObject:
   - component: {fileID: 8466352860135322622}
   - component: {fileID: 8466352860132411862}
   - component: {fileID: 8466352860133558190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10669,7 +10669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860200990826}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10701,7 +10701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860204314849}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10733,7 +10733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860265557119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10765,7 +10765,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860304460434}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10801,7 +10801,7 @@ GameObject:
   - component: {fileID: 8466352860336099246}
   - component: {fileID: 8466352860335266792}
   - component: {fileID: 8474558539514267742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10917,7 +10917,7 @@ GameObject:
   - component: {fileID: 8466352860333341600}
   - component: {fileID: 8466352860336193928}
   - component: {fileID: 8466352860335050736}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11000,7 +11000,7 @@ GameObject:
   - component: {fileID: 8466352860333297984}
   - component: {fileID: 8466352860336136098}
   - component: {fileID: 8466352860335075268}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11083,7 +11083,7 @@ GameObject:
   - component: {fileID: 8466352860365639192}
   - component: {fileID: 8466352860362244346}
   - component: {fileID: 8466352860363354268}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11166,7 +11166,7 @@ GameObject:
   - component: {fileID: 8466352860365612280}
   - component: {fileID: 8466352860362186448}
   - component: {fileID: 8466352860363329704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11251,7 +11251,7 @@ GameObject:
   - component: {fileID: 8466352860362281206}
   - component: {fileID: 8466352860363670704}
   - component: {fileID: 8474558538951415558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11365,7 +11365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860404071794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11397,7 +11397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860434169057}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11432,7 +11432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860476667622}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11464,7 +11464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860544228134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11498,7 +11498,7 @@ GameObject:
   - component: {fileID: 8466352860570164414}
   - component: {fileID: 8466352860568769116}
   - component: {fileID: 8466352860567740986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11581,7 +11581,7 @@ GameObject:
   - component: {fileID: 8466352860570138206}
   - component: {fileID: 8466352860568833142}
   - component: {fileID: 8466352860567749134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11666,7 +11666,7 @@ GameObject:
   - component: {fileID: 8466352860568797776}
   - component: {fileID: 8466352860568196630}
   - component: {fileID: 8474558538744759712}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11782,7 +11782,7 @@ GameObject:
   - component: {fileID: 8466352860586702175}
   - component: {fileID: 8466352860585802685}
   - component: {fileID: 8466352860584791003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11865,7 +11865,7 @@ GameObject:
   - component: {fileID: 8466352860586663871}
   - component: {fileID: 8466352860585862551}
   - component: {fileID: 8466352860584782831}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11950,7 +11950,7 @@ GameObject:
   - component: {fileID: 8466352860585831345}
   - component: {fileID: 8466352860584738807}
   - component: {fileID: 8474558538728270913}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12064,7 +12064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860622964488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12100,7 +12100,7 @@ GameObject:
   - component: {fileID: 8466352860633745683}
   - component: {fileID: 8466352860634324309}
   - component: {fileID: 8474558539218390755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12216,7 +12216,7 @@ GameObject:
   - component: {fileID: 8466352860632356861}
   - component: {fileID: 8466352860633717023}
   - component: {fileID: 8466352860634786169}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12299,7 +12299,7 @@ GameObject:
   - component: {fileID: 8466352860632333597}
   - component: {fileID: 8466352860633646901}
   - component: {fileID: 8466352860634794317}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12380,7 +12380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860657005622}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12412,7 +12412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860659737743}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12448,7 +12448,7 @@ GameObject:
   - component: {fileID: 8466352860742011546}
   - component: {fileID: 8466352860743093430}
   - component: {fileID: 8474177865007683228}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12560,7 +12560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860771233026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannons_Prow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12593,7 +12593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860779267947}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12625,7 +12625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860784554475}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12661,7 +12661,7 @@ GameObject:
   - component: {fileID: 8466352860786461788}
   - component: {fileID: 8466352860787726362}
   - component: {fileID: 8474558539064953772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12777,7 +12777,7 @@ GameObject:
   - component: {fileID: 8466352860789995602}
   - component: {fileID: 8466352860786557562}
   - component: {fileID: 8466352860787510274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12860,7 +12860,7 @@ GameObject:
   - component: {fileID: 8466352860789953202}
   - component: {fileID: 8466352860786498640}
   - component: {fileID: 8466352860787534902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12941,7 +12941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860793587508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannons_Port
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12979,7 +12979,7 @@ GameObject:
   - component: {fileID: 8466352860809039039}
   - component: {fileID: 8466352860810303737}
   - component: {fileID: 8474558539058170703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13095,7 +13095,7 @@ GameObject:
   - component: {fileID: 8466352860808335953}
   - component: {fileID: 8466352860809010355}
   - component: {fileID: 8466352860810112213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13178,7 +13178,7 @@ GameObject:
   - component: {fileID: 8466352860808313009}
   - component: {fileID: 8466352860809069209}
   - component: {fileID: 8466352860810087649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Extra_Gun_01_Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13259,7 +13259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8466352860808573702}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Broadside_Starboard_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13295,7 +13295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8700444296538316618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MizzenMast
   m_TagString: Untagged
   m_Icon: {fileID: 0}

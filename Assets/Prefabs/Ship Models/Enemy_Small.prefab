@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2002035070022759459}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainMast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 338378228180453065}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainMastFurled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7372322411351949139}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7372322411630797896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Port
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7372322411725107802}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Starboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7372322412243790314}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Attachments
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 7372322412243826202}
   - component: {fileID: 7372322412240872140}
   - component: {fileID: 7372322412241925464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 7372322412243746788}
   - component: {fileID: 7372322412240862334}
   - component: {fileID: 7372322412241845884}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_Covered_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 7372322412243817708}
   - component: {fileID: 7372322412240921450}
   - component: {fileID: 7372322412241842382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_ShipWheel_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 7372322412243791262}
   - component: {fileID: 7372322412240840938}
   - component: {fileID: 7372322412241881156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Medium_01_Sails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +547,7 @@ GameObject:
   - component: {fileID: 7372322412243729234}
   - component: {fileID: 7372322412240873300}
   - component: {fileID: 7372322412241835236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_Cannonballs_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 7372322412243824114}
   - component: {fileID: 7372322412240849938}
   - component: {fileID: 7372322412241928338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_Covered_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 7372322412243728540}
   - component: {fileID: 7372322412240835826}
   - component: {fileID: 7372322412241918444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Cannon_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -798,7 +798,7 @@ GameObject:
   - component: {fileID: 7372322412241842274}
   - component: {fileID: 7397980569378845432}
   - component: {fileID: 2602385406965864923}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -916,7 +916,7 @@ GameObject:
   - component: {fileID: 7397568077593013130}
   - component: {fileID: 7398106280081588930}
   - component: {fileID: 7398291426453391836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Medium_01_Mast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1055,7 +1055,7 @@ GameObject:
   - component: {fileID: 7372322412243726400}
   - component: {fileID: 7372322412240839914}
   - component: {fileID: 7372322412241944460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Prop_Crate_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1138,7 +1138,7 @@ GameObject:
   - component: {fileID: 7372322412243731996}
   - component: {fileID: 7372322412240863260}
   - component: {fileID: 7372322412241939464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Veh_Boat_Medium_01_Sails_Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1219,7 +1219,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7283970829151159750}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1253,6 +1253,18 @@ PrefabInstance:
     - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_Name
       value: Cannon (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 155062, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 179352, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 449030, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_RootOrder
@@ -1298,6 +1310,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 848646903901757528, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 848646903901813510, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564195232121720853, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
 --- !u!4 &7372322410288100344 stripped
@@ -1315,6 +1339,18 @@ PrefabInstance:
     - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_Name
       value: Cannon (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 155062, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 179352, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 449030, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_RootOrder
@@ -1360,6 +1396,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 848646903901757528, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 848646903901813510, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564195232121720853, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
 --- !u!4 &7372322410742550442 stripped
@@ -1377,6 +1425,18 @@ PrefabInstance:
     - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_Name
       value: Cannon (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 155062, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 179352, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 449030, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_RootOrder
@@ -1422,6 +1482,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 848646903901757528, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 848646903901813510, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564195232121720853, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
 --- !u!4 &7372322411172445918 stripped
@@ -1439,6 +1511,18 @@ PrefabInstance:
     - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_Name
       value: Cannon (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 155062, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 179352, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 449030, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_RootOrder
@@ -1484,6 +1568,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 848646903901757528, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 848646903901813510, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564195232121720853, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
 --- !u!4 &7372322411367206272 stripped
@@ -1501,6 +1597,18 @@ PrefabInstance:
     - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_Name
       value: Cannon (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 155062, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 179352, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 449030, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_RootOrder
@@ -1546,6 +1654,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 848646903901757528, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 848646903901813510, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564195232121720853, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
 --- !u!4 &7372322411580461637 stripped
@@ -1563,6 +1683,18 @@ PrefabInstance:
     - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_Name
       value: Cannon (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 123240, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 155062, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 179352, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 449030, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_RootOrder
@@ -1607,6 +1739,18 @@ PrefabInstance:
     - target: {fileID: 449030, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 848646903901757528, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 848646903901813510, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2564195232121720853, guid: 60374011c4699ed439d515d67fe80bea, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60374011c4699ed439d515d67fe80bea, type: 3}

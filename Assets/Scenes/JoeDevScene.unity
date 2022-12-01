@@ -894,76 +894,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8db3049d5a301a4b97b26d981417586, type: 3}
---- !u!1 &734219679 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7633918090164931407, guid: b187bdef2381b644891d2b84f07de158, type: 3}
-  m_PrefabInstance: {fileID: 7633918091128977313}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &734219680 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
-  m_PrefabInstance: {fileID: 7633918091128977313}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &734219683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734219679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 734219680}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!1 &793217450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2285348326725088900, guid: 77ee672b5d27ef84b9402215ec781791, type: 3}
@@ -2210,30 +2140,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7633918090164931407, guid: b187bdef2381b644891d2b84f07de158, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7933534
-      objectReference: {fileID: 0}
-    - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.60876137
-      objectReference: {fileID: 0}
-    - target: {fileID: 7633918090164931408, guid: b187bdef2381b644891d2b84f07de158, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 7633918090164931409, guid: b187bdef2381b644891d2b84f07de158, type: 3}
-      propertyPath: m_RenderingPath
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7633918091361757879, guid: b187bdef2381b644891d2b84f07de158, type: 3}
       propertyPath: m_Name
       value: Camera Holder

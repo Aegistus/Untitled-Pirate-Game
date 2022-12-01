@@ -12,6 +12,7 @@ public class SpawnManager : MonoBehaviour
     void Awake()
     {
         allSpawners = FindObjectsOfType<EnemySpawner>().ToList();
+        StartCoroutine(SpawnEnemies());
         StartCoroutine(SpawnRoutine());
     }
 
