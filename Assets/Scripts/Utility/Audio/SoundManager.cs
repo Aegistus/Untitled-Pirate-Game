@@ -17,6 +17,10 @@ public class SoundManager : MonoBehaviour
 
 	private Queue<AudioSource> positionalSources = new Queue<AudioSource>();
 
+	private static bool keepFadingIn;
+	private static bool keepFadingOut;
+	[SerializeField] AudioSource audioSource;
+
 	void Awake()
 	{
 		if (Instance != null)
@@ -141,4 +145,43 @@ public class SoundManager : MonoBehaviour
         }
 		return id;
     }
+
+	public static void FadeInCaller(AudioSource track, float speed, float maxVolume)
+    {
+		Instance.StartCoroutine(Instance.FadeIn(track, speed, maxVolume));
+    }
+	public static void FadeOutCaller(AudioSource track, float speed)
+	{
+		Instance.StartCoroutine(Instance.FadeOut(track, speed));
+	}
+	IEnumerator FadeIn(AudioSource track, float speed, float maxVolume)
+    {
+		keepFadingIn = true;
+		keepFadingOut = false;
+
+		track.volume = 0;
+		float audioVolume = track.volume;
+
+		while(track.volume < maxVolume && keepFadingIn)
+        {
+			audioVolume += speed;
+			track.volume = audioVolume;
+			yield return new WaitForSeconds(0.1f);
+        }
+    }
+	IEnumerator FadeOut(AudioSource track, float speed)
+	{
+		keepFadingIn = false;
+		keepFadingOut = true;
+
+		
+		float audioVolume = track.volume;
+
+		while (track.volume >= speed && keepFadingOut)
+		{
+			audioVolume -= speed;
+			track.volume = audioVolume;
+			yield return new WaitForSeconds(0.1f);
+		}
+	}
 }
