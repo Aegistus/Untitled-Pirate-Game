@@ -16,6 +16,7 @@ public class TreasureManager : MonoBehaviour
     int foundTreasureMaps = 0;
     // how many maps the player must find before a chest spawns
     int mapsPerChest = 3;
+    int numOfConcurrentChests = 3;
     List<TreasureMap> spawnedTreasureMaps;
     List<TreasureChest> spawnedTreasureChests;
     WorldBoundary worldBoundary;
@@ -35,7 +36,11 @@ public class TreasureManager : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(SpawnDelay());
+        //StartCoroutine(MapSpawnDelay());
+        for (int i = 0; i < numOfConcurrentChests; i++)
+        {
+            SpawnTreasureMaps();
+        }
     }
 
     void SpawnTreasureMaps()
@@ -59,7 +64,7 @@ public class TreasureManager : MonoBehaviour
         }
         Instantiate(chest, worldBoundary.GetRandomPointInBounds(), Quaternion.identity);
         foundTreasureMaps = 0;
-        StartCoroutine(SpawnDelay());
+        StartCoroutine(MapSpawnDelay());
     }
     
     void UpdateMapCounter()
@@ -71,7 +76,7 @@ public class TreasureManager : MonoBehaviour
         }
     }
 
-    IEnumerator SpawnDelay()
+    IEnumerator MapSpawnDelay()
     {
         yield return new WaitForSeconds(spawnDelay);
         SpawnTreasureMaps();
