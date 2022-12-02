@@ -9828,6 +9828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4303093630d950745aebf8a32c64974c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldReward: 25
   playerLayer: 3
 --- !u!135 &4051668062356186716
 SphereCollider:
