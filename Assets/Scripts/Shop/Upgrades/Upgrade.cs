@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Upgrade
+public abstract class Upgrade: MonoBehaviour
 {
     // how much the upgrade costs
     public int goldCost;

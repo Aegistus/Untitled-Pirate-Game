@@ -14,8 +14,16 @@ public class HealthUpgrade : Upgrade
 
     public override void Apply()
     {
-        ShipHealth health = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipHealth>();
-        health.AddToMaxHealth((int)upgradeValue);
+        PlayerGold gold = GameObject.FindObjectOfType<PlayerGold>();
+        if (gold.TrySpendGold(goldCost))
+        {
+            ShipHealth health = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipHealth>();
+            health.AddToMaxHealth((int)upgradeValue);
+            IncreaseUpgradeLevel();
+        }
+        else
+            Debug.Log("Not enough gold for health");
+
     }
 
     public override void IncreaseUpgradeLevel()

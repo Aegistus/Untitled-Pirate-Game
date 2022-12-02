@@ -14,8 +14,15 @@ public class ReloadTimeUpgrade : Upgrade
     }
     public override void Apply()
     {
-        ShipWeapons weapons = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipWeapons>();
-        weapons.SubtractReloadTimeModifier(upgradeValue);
+        PlayerGold gold = GameObject.FindObjectOfType<PlayerGold>();
+        if (gold.TrySpendGold(goldCost))
+        {
+            ShipWeapons weapons = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipWeapons>();
+            weapons.SubtractReloadTimeModifier(upgradeValue);
+            IncreaseUpgradeLevel();
+        }
+        else
+            Debug.Log("Not enough gold for reload time");
     }
 
     public override void IncreaseUpgradeLevel()

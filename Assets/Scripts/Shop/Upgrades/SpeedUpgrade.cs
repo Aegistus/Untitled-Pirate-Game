@@ -13,8 +13,15 @@ public class SpeedUpgrade : Upgrade
     }
     public override void Apply()
     {
-        ShipMovement shipMovement = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipMovement>();
-        shipMovement.AddToMovementSpeed(upgradeValue);
+        PlayerGold gold = GameObject.FindObjectOfType<PlayerGold>();
+        if (gold.TrySpendGold(goldCost))
+        {
+            ShipMovement shipMovement = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipMovement>();
+            shipMovement.AddToMovementSpeed(upgradeValue);
+            IncreaseUpgradeLevel();
+        }
+        else
+            Debug.Log("Not enough gold for speed");
     }
 
     public override void IncreaseUpgradeLevel()

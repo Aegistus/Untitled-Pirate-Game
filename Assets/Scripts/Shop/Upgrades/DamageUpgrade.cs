@@ -13,8 +13,15 @@ public class DamageUpgrade : Upgrade
     }
     public override void Apply()
     {
-        ShipWeapons damage = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipWeapons>();
-        damage.AddToDamageModifier(upgradeValue);
+        PlayerGold gold = GameObject.FindObjectOfType<PlayerGold>();
+        if (gold.TrySpendGold(goldCost))
+        {
+            ShipWeapons damage = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipWeapons>();
+            damage.AddToDamageModifier(upgradeValue);
+            IncreaseUpgradeLevel();
+        }
+        else
+            Debug.Log("Not enough gold for damage");
     }
 
     public override void IncreaseUpgradeLevel()

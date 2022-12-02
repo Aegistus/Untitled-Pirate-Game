@@ -13,8 +13,15 @@ public class TurnSpeedUpgrade : Upgrade
     }
     public override void Apply()
     {
-        ShipMovement shipMovement = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipMovement>();
-        shipMovement.AddToTurnSpeed(upgradeValue);
+        PlayerGold gold = GameObject.FindObjectOfType<PlayerGold>();
+        if (gold.TrySpendGold(goldCost))
+        {
+            ShipMovement shipMovement = GameObject.FindObjectOfType<PlayerController>().GetComponent<ShipMovement>();
+            shipMovement.AddToTurnSpeed(upgradeValue);
+            IncreaseUpgradeLevel();
+        }
+        else
+            Debug.Log("Not enough gold for turn speed");
     }
 
     public override void IncreaseUpgradeLevel()
