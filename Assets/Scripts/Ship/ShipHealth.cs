@@ -53,7 +53,11 @@ public class ShipHealth : MonoBehaviour
         ClampHealth();
         OnHealthChange.Invoke();
     }
-
+    public void RepairAll()
+    {
+        RepairValue repair = new RepairValue (maxBottomHealth-BottomHealth, maxDeckHealth-DeckHealth, maxSailHealth-SailHealth);
+        Repair(repair);
+    }
     public void AddToMaxHealth(int additionalHealth)
     {
         maxBottomHealth += additionalHealth;
